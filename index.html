@@ -1,0 +1,800 @@
+<title>Chongqing to Yunnan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Nunito:wght@500;700;800&family=IBM+Plex+Mono:wght@500;600&family=ZCOOL+KuaiLe&display=swap">
+<style>
+/* Layout: a travel scrapbook on a phone. Notebook-paper ground, taped paper cards, polaroids, ink stamps; fixed tab bar. City colour codes every day. */
+:root{
+  --bg:#F3F0FB; --paper:#FFFDF8; --paper-2:#F1ECFA; --ink:#2A1E44; --ink-soft:#64597F; --line:#DCD3EE; --dot:rgba(42,30,68,.13);
+  --accent:#FF5A3C; --accent-ink:#FFFFFF; --good:#13A36F; --warn:#C77700; --shadow:0 2px 0 rgba(42,30,68,.10),0 6px 14px -8px rgba(42,30,68,.25);
+  --cq:#FF5A3C; --dl:#2B7FFF; --sg:#E3A400; --lj:#0F9E73; --sz:#8B5CF6; --home:#7A7395;
+  --cq-soft:#FFE6E0; --dl-soft:#E1ECFF; --sg-soft:#FFF2CC; --lj-soft:#DDF5EC; --sz-soft:#EEE6FF; --home-soft:#ECEAF3;
+  --sticker:#FFE45C; --sticker-ink:#3A2C00;
+  --grain:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .16  0 0 0 0 .12  0 0 0 0 .27  0 0 0 .09 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  --f-hand:"Caveat","Bradley Hand","Segoe Print",cursive;
+  --f-body:"Nunito","Avenir Next",system-ui,-apple-system,"PingFang SC","Noto Sans SC",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --f-cn:"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif;
+  --f-cn-fun:"ZCOOL KuaiLe","PingFang SC","Noto Sans SC",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#15112A; --paper:#211B39; --paper-2:#2B2448; --ink:#F3EFFF; --ink-soft:#B9AFD8; --line:#3B3262; --dot:rgba(243,239,255,.08);
+  --accent:#FF7558; --accent-ink:#1B0D08; --good:#3DD39A; --warn:#FFB547; --shadow:0 2px 0 rgba(0,0,0,.35),0 8px 18px -10px rgba(0,0,0,.6);
+  --cq:#FF7558; --dl:#6AA6FF; --sg:#FFCB3D; --lj:#3DD3A2; --sz:#B08CFF; --home:#A8A1C2;
+  --cq-soft:#3D1F1C; --dl-soft:#1A2848; --sg-soft:#3A3011; --lj-soft:#123428; --sz-soft:#2A2148; --home-soft:#2A2640;
+  --grain:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .05 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#15112A; --paper:#211B39; --paper-2:#2B2448; --ink:#F3EFFF; --ink-soft:#B9AFD8; --line:#3B3262; --dot:rgba(243,239,255,.08);
+  --accent:#FF7558; --accent-ink:#1B0D08; --good:#3DD39A; --warn:#FFB547; --shadow:0 2px 0 rgba(0,0,0,.35),0 8px 18px -10px rgba(0,0,0,.6);
+  --cq:#FF7558; --dl:#6AA6FF; --sg:#FFCB3D; --lj:#3DD3A2; --sz:#B08CFF; --home:#A8A1C2;
+  --cq-soft:#3D1F1C; --dl-soft:#1A2848; --sg-soft:#3A3011; --lj-soft:#123428; --sz-soft:#2A2148; --home-soft:#2A2640;
+  --grain:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .05 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  color-scheme:dark;}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background-color:var(--bg);background-image:var(--grain),radial-gradient(var(--dot) 1.1px,transparent 1.4px);background-size:180px 180px,20px 20px;color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.45;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:8px}
+.wrap{max-width:640px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:2px dashed var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:8px;padding-block:8px}
+.logo{font-family:var(--f-hand);font-weight:700;font-size:27px;line-height:.95;flex:1;min-width:0}
+.logo small{display:block;font-family:var(--f-body);font-weight:700;font-size:12px;color:var(--ink-soft)}
+.pill{font-size:12px;font-weight:800;padding:4px 9px;border-radius:999px;background:var(--paper-2);color:var(--ink-soft);white-space:nowrap;border:0}
+.pill.ok{color:var(--good)} .pill.bad{color:var(--warn)}
+.me{background:var(--paper);border:2px solid var(--ink);color:var(--ink)}
+main{padding-block:16px 120px}
+nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:25;background:var(--paper);border-top:2px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+nav.tabs .wrap{display:grid;grid-template-columns:repeat(6,1fr);gap:2px;padding-block:6px}
+nav.tabs a{display:flex;flex-direction:column;align-items:center;gap:1px;text-decoration:none;color:var(--ink-soft);font-size:11px;font-weight:800;padding:6px 0;border-radius:12px}
+nav.tabs a svg{width:22px;height:22px}
+nav.tabs a[aria-current="page"]{color:var(--accent);background:var(--paper-2)}
+h1,h2,h3{font-family:var(--f-hand);font-weight:700;text-wrap:balance;margin:0;line-height:1.05}
+h2{font-size:32px} h3{font-size:25px}
+.stack{display:flex;flex-direction:column;gap:18px}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.muted{color:var(--ink-soft)}
+.hand{font-family:var(--f-hand);font-size:20px;line-height:1.15}
+
+/* Paper cards with washi tape */
+.card{position:relative;background:var(--paper);border:1.5px solid var(--line);border-radius:6px;padding:18px 14px 14px;box-shadow:var(--shadow);min-width:0}
+.stack>.card:nth-child(4n+1){transform:rotate(-.5deg)} .stack>.card:nth-child(4n+3){transform:rotate(.4deg)}
+.tape::before{content:"";position:absolute;top:-11px;left:50%;width:92px;height:22px;transform:translateX(-50%) rotate(-3deg);background:repeating-linear-gradient(-45deg,color-mix(in srgb,var(--c,var(--accent)) 62%,transparent) 0 7px,color-mix(in srgb,var(--c,var(--accent)) 36%,transparent) 7px 14px);clip-path:polygon(3% 0,97% 4%,100% 50%,96% 100%,2% 96%,0 50%);z-index:2}
+.tape.r::before{left:auto;right:18px;transform:rotate(5deg)}
+.tape.l::before{left:18px;transform:rotate(-6deg)}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:800;padding:3px 9px;border-radius:999px;background:var(--paper-2);color:var(--ink);white-space:nowrap}
+.sticker{display:inline-block;font-family:var(--f-hand);font-weight:700;font-size:18px;line-height:1;padding:3px 9px 4px;border-radius:4px;background:var(--sticker);color:var(--sticker-ink);transform:rotate(-2deg);box-shadow:0 1px 0 rgba(0,0,0,.15)}
+.city-cq{--c:var(--cq);--cs:var(--cq-soft)} .city-dl{--c:var(--dl);--cs:var(--dl-soft)} .city-sg{--c:var(--sg);--cs:var(--sg-soft)}
+.city-lj{--c:var(--lj);--cs:var(--lj-soft)} .city-sz{--c:var(--sz);--cs:var(--sz-soft)} .city-home{--c:var(--home);--cs:var(--home-soft)}
+.citytag{background:var(--cs);color:var(--ink);border:2px solid var(--c)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:2px solid var(--ink);background:var(--paper);color:var(--ink);font-weight:800;font-size:13px;padding:7px 12px;border-radius:12px;text-decoration:none;box-shadow:0 2px 0 var(--ink);min-height:36px}
+.btn:active{transform:translateY(2px);box-shadow:none}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.small{font-size:12px;padding:4px 9px;min-height:30px}
+.btn.ghost{border-color:var(--line);box-shadow:none}
+.btn.danger{background:var(--warn);color:#fff;border-color:var(--warn);box-shadow:none}
+.seg{display:flex;gap:6px;background:var(--paper-2);padding:4px;border-radius:14px;overflow-x:auto}
+.seg button{flex:1;border:0;background:none;font-weight:800;font-size:13px;padding:8px 10px;border-radius:10px;color:var(--ink-soft);white-space:nowrap}
+.seg button[aria-pressed="true"]{background:var(--paper);color:var(--ink);box-shadow:var(--shadow)}
+
+/* Hero */
+.hero{position:relative;background:var(--cs);border:2px solid var(--c);border-radius:6px;padding:20px 16px 16px;box-shadow:var(--shadow);transform:rotate(-.6deg)}
+.hero .big{font-family:var(--f-hand);font-weight:700;font-size:58px;line-height:.9}
+.hero p{margin:8px 0 0}
+.hero-copy{padding-right:84px}
+.stamp{position:absolute;right:10px;top:12px;width:78px;height:78px;border-radius:50%;border:3px double var(--c);display:grid;place-items:center;text-align:center;font-family:var(--f-hand);font-weight:700;font-size:17px;line-height:.95;transform:rotate(11deg);color:var(--c)}
+.nn{border-left:6px solid var(--c);padding:10px 12px;background:var(--paper);border-radius:4px;box-shadow:var(--shadow)}
+.nn .lbl{display:inline-block;font-family:var(--f-hand);font-weight:700;font-size:21px;color:var(--c)}
+.nn .what{font-weight:800;font-size:16px}
+.wx{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start}
+.temp{font-family:var(--f-hand);font-weight:700;font-size:40px;line-height:.9;white-space:nowrap}
+
+/* Plan */
+.daypick{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 10px;scroll-snap-type:x mandatory}
+.daypick button{scroll-snap-align:start;flex:0 0 auto;border:2px solid var(--c);background:var(--paper);border-radius:10px;padding:5px 10px;text-align:left;min-width:62px}
+.daypick button .d{font-family:var(--f-hand);font-weight:700;font-size:26px;line-height:.9}
+.daypick button .m{font-size:11px;font-weight:800;color:var(--ink-soft)}
+.daypick button[aria-pressed="true"]{background:var(--c);color:var(--accent-ink);transform:rotate(-2deg)}
+.daypick button[aria-pressed="true"] .m{color:inherit}
+.pagenav{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.flip-in{animation:flip .32s ease-out}
+.flip-in.back{animation-name:flipb}
+@keyframes flip{from{transform:perspective(900px) rotateY(-18deg) translateX(30px);opacity:.2}to{transform:none;opacity:1}}
+@keyframes flipb{from{transform:perspective(900px) rotateY(18deg) translateX(-30px);opacity:.2}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.flip-in{animation:none}}
+.timeline{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.stop{display:grid;grid-template-columns:52px 30px 1fr;gap:8px;padding:10px 0;border-bottom:2px dotted var(--line);align-items:start}
+.stop:last-child{border-bottom:0}
+.stop .t{font-family:var(--f-hand);font-weight:700;font-size:21px;color:var(--ink-soft);line-height:1.1}
+.stop .body{min-width:0}
+.stop .title{font-weight:800}
+.stop .note{color:var(--ink-soft);font-size:14px;margin-top:2px}
+.stop.done .title{text-decoration:line-through;text-decoration-thickness:2px;opacity:.6}
+.tick{width:28px;height:28px;border-radius:7px;border:2px solid var(--ink);background:var(--paper);display:grid;place-items:center;padding:0;transform:rotate(-3deg)}
+.tick svg{width:20px;height:20px;opacity:0}
+.tick[aria-pressed="true"]{background:var(--good);border-color:var(--good)}
+.tick[aria-pressed="true"] svg{opacity:1;color:#fff}
+.tick:disabled{opacity:.45;cursor:default}
+
+/* Polaroids */
+.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:18px 14px;padding-top:6px}
+.polaroid{position:relative;margin:0;background:#FFFFFF;padding:8px 8px 6px;box-shadow:0 2px 0 rgba(0,0,0,.08),0 10px 18px -10px rgba(0,0,0,.45);transform:rotate(-2deg);min-width:0}
+.polaroid:nth-child(even){transform:rotate(2.2deg)} .polaroid:nth-child(3n){transform:rotate(-.8deg)}
+.polaroid::before{content:"";position:absolute;top:-9px;left:50%;width:56px;height:18px;transform:translateX(-50%) rotate(4deg);background:color-mix(in srgb,var(--c,var(--sticker)) 55%,transparent);clip-path:polygon(4% 0,96% 6%,100% 50%,95% 100%,3% 94%,0 50%)}
+.polaroid img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;background:#E9E5F2}
+.polaroid figcaption{font-family:var(--f-hand);font-size:19px;line-height:1.05;color:#2A1E44;padding:6px 2px 0;overflow-wrap:anywhere;min-height:26px}
+.polaroid .by{font-family:var(--f-body);font-size:11px;font-weight:800;color:#6B6185}
+.polaroid .del{position:absolute;top:4px;right:4px;border:0;background:rgba(255,255,255,.85);color:#2A1E44;border-radius:8px;font-size:16px;line-height:1;padding:4px 7px}
+.ph-missing{display:grid;place-items:center;aspect-ratio:1/1;background:#E9E5F2;color:#6B6185;font-size:12px;font-weight:700;text-align:center;padding:8px}
+.notes{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:420px){.notes{grid-template-columns:1fr}}
+.note-card{background:var(--sticker);color:var(--sticker-ink);padding:10px 12px 8px;transform:rotate(-1deg);box-shadow:0 6px 12px -8px rgba(0,0,0,.5)}
+.note-card:nth-child(2){background:#BDF0D9;transform:rotate(1.2deg)}
+.note-card label{font-family:var(--f-hand);font-weight:700;font-size:20px}
+.note-card textarea{width:100%;min-height:74px;border:0;background:transparent;resize:vertical;font-family:var(--f-hand);font-size:21px;line-height:1.15;color:inherit;padding:0}
+.note-card textarea::placeholder{color:rgba(58,44,0,.5)}
+.note-card textarea:focus{outline:2px dashed rgba(58,44,0,.4);outline-offset:3px}
+
+/* Lists */
+.item{display:grid;grid-template-columns:30px 1fr auto;gap:10px;align-items:start;padding:10px 0;border-bottom:2px dotted var(--line)}
+.item:last-child{border-bottom:0}
+.item .main{min-width:0}
+.item .name{font-weight:800}
+.item .cn{font-family:var(--f-cn);font-size:15px}
+.item.done .name{text-decoration:line-through;opacity:.6}
+.x{border:0;background:none;color:var(--ink-soft);font-size:20px;line-height:1;padding:4px 6px;border-radius:8px}
+form.add{display:grid;gap:8px}
+form.add .r{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+input[type=text],input[type=number],select{width:100%;border:2px solid var(--line);background:var(--paper);border-radius:10px;padding:9px 11px;min-width:0}
+input:focus,select:focus{border-color:var(--accent);outline:none}
+.grouphead{font-family:var(--f-hand);font-weight:700;font-size:22px;color:var(--ink-soft);margin-top:6px}
+.empty{border:2px dashed var(--line);border-radius:10px;padding:16px;text-align:center;color:var(--ink-soft)}
+
+/* Map + stamps */
+.mapbox{position:relative;width:100%;max-width:100%;aspect-ratio:360/240}
+.mapbox svg{width:100%;height:100%;display:block;overflow:visible}
+.maplabel{font-family:var(--f-hand);font-weight:700;font-size:15px;fill:var(--ink)}
+.maplabel.cn{font-family:var(--f-cn-fun);font-size:9px;font-weight:400;fill:var(--ink-soft)}
+.mapmode{font-family:var(--f-hand);font-size:11px;fill:var(--ink-soft)}
+.stamps{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:12px;justify-items:center}
+.pstamp{width:96px;height:96px;border-radius:50%;display:grid;place-items:center;text-align:center;border:3px dashed var(--line);color:var(--ink-soft);padding:8px;font-size:11px;font-weight:700;line-height:1.15}
+.pstamp.got{border:3px double var(--c);color:var(--c);transform:rotate(var(--rot,-8deg));background:radial-gradient(circle,color-mix(in srgb,var(--c) 10%,transparent),transparent 70%)}
+.pstamp .en{font-family:var(--f-hand);font-weight:700;font-size:18px;line-height:.9;overflow-wrap:anywhere}
+.pstamp .zh{font-family:var(--f-cn-fun);font-size:15px}
+.pstamp.thud{animation:thud .5s cubic-bezier(.2,1.6,.4,1)}
+@keyframes thud{0%{transform:scale(2.2) rotate(0);opacity:0}100%{transform:scale(1) rotate(var(--rot,-8deg));opacity:1}}
+@media (prefers-reduced-motion:reduce){.pstamp.thud{animation:none}}
+.place{display:flex;flex-direction:column;gap:8px;padding:12px 0;border-bottom:2px dotted var(--line)}
+.place:last-child{border-bottom:0}
+.place .cn{font-family:var(--f-cn);font-size:18px;font-weight:700}
+.place .addr{font-family:var(--f-cn);font-size:14px;color:var(--ink-soft)}
+
+/* Tickets */
+.ticket{display:grid;background:var(--paper);border:2px solid var(--ink);border-radius:14px;overflow:hidden;box-shadow:0 3px 0 var(--ink)}
+.ticket .top{padding:12px 14px;background:var(--cs);border-bottom:2px dashed var(--ink);position:relative}
+.ticket .top::before,.ticket .top::after{content:"";position:absolute;bottom:-11px;width:20px;height:20px;border-radius:50%;background:var(--bg);border:2px solid var(--ink)}
+.ticket .top::before{left:-12px} .ticket .top::after{right:-12px}
+.ticket .bot{padding:12px 14px;display:grid;gap:6px}
+.kv{display:grid;grid-template-columns:96px 1fr;gap:6px 8px;font-size:14px;margin:0}
+.kv dt{color:var(--ink-soft);font-weight:700}
+.kv dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.ref{font-family:var(--f-mono);font-weight:600;letter-spacing:.04em}
+
+/* Money */
+.balance{font-family:var(--f-hand);font-weight:700;font-size:30px;line-height:1.05}
+.amt{font-family:var(--f-mono);font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.who{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;font-weight:800;font-size:12px;color:#fff}
+.who.E{background:var(--dl)} .who.A{background:var(--cq)}
+
+/* Summary */
+.statgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.stat{background:var(--paper);border:1.5px solid var(--line);padding:10px;text-align:center;box-shadow:var(--shadow)}
+.stat:nth-child(odd){transform:rotate(-1.2deg)} .stat:nth-child(even){transform:rotate(1deg)}
+.stat .n{font-family:var(--f-hand);font-weight:700;font-size:38px;line-height:.9}
+.stat .l{font-size:12px;font-weight:800;color:var(--ink-soft)}
+
+/* Driver card */
+.overlay{position:fixed;inset:0;z-index:50;background:var(--bg);display:flex;flex-direction:column;padding:calc(env(safe-area-inset-top,0px) + 16px) max(16px,env(safe-area-inset-right,0px)) calc(env(safe-area-inset-bottom,0px) + 16px) max(16px,env(safe-area-inset-left,0px));overflow:auto}
+.overlay .say{font-size:14px;font-weight:800;color:var(--ink-soft)}
+.overlay .bigcn{font-family:var(--f-cn);font-weight:700;font-size:clamp(30px,9vw,54px);line-height:1.25;margin:14px 0;overflow-wrap:anywhere}
+.overlay .bigaddr{font-family:var(--f-cn);font-size:clamp(20px,6vw,30px);line-height:1.35;overflow-wrap:anywhere}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom,0px) + 84px);z-index:60;background:var(--ink);color:var(--bg);font-weight:800;font-size:14px;padding:10px 14px;border-radius:12px;max-width:min(92vw,420px)}
+.banner{background:var(--sticker);color:var(--sticker-ink);border-radius:6px;padding:10px 12px;font-weight:700;font-size:14px;transform:rotate(-.4deg)}
+@media (prefers-reduced-motion:no-preference){.tick,.btn{transition:transform .08s,background .15s}}
+</style>
+
+<header class="top"><div class="wrap">
+  <div class="logo">Chongqing → Yunnan<small>28 Dec – 8 Jan · Elijah &amp; Ashley</small></div>
+  <button class="pill me" id="meBtn" type="button" aria-label="Switch who is using this phone">I'm Elijah</button>
+  <span class="pill" id="sync">connecting…</span>
+</div></header>
+
+<main class="wrap" id="view" aria-live="polite"></main>
+
+<nav class="tabs" aria-label="Sections"><div class="wrap" id="tabs"></div></nav>
+<div class="overlay" id="driver" hidden role="dialog" aria-modal="true" aria-labelledby="drvTitle"></div>
+<div class="toast" id="toast" hidden></div>
+<input type="file" id="photoInput" accept="image/*" multiple hidden>
+
+<script src="https://cdn.jsdelivr.net/npm/roughjs@4.6.6/bundled/rough.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/rough-notation@0.5.1/lib/rough-notation.iife.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.js"></script>
+<script>
+/* ===================== TRIP DATA ===================== */
+const CITIES={cq:"Chongqing",dl:"Dali",sg:"Shangri-La",lj:"Lijiang",sz:"Shenzhen",home:"Home"};
+const CITY_CN={cq:"重庆",dl:"大理",sg:"香格里拉",lj:"丽江",sz:"深圳",home:""};
+const WEATHER={ // January averages from the trip brief, not forecasts
+  cq:{lo:6,hi:11,cond:"Cold, overcast, damp",wear:"Thermal top, sweater or fleece, light down jacket, waterproof shell or umbrella, shoes with grip for wet stairs."},
+  dl:{lo:1,hi:15,cond:"Dry and sunny, big day–night swing",wear:"Day: long sleeves + fleece or light jacket. Night: down jacket, beanie, gloves. Sunglasses and sunscreen."},
+  sg:{lo:-7,hi:6,cond:"Dry, frost or snow possible, ~3,300m",wear:"Thermal top and bottoms, fleece, down jacket, windproof outer, beanie, gloves, warm socks, boots with grip. Lip balm."},
+  lj:{lo:-1,hi:13,cond:"Dry and sunny, below zero at night",wear:"Fleece + down jacket, beanie and gloves after dark. On Jade Dragon: everything you wore in Shangri-La, plus sunglasses for snow glare."},
+  sz:null, home:null
+};
+const P={
+ lindu:{c:"cq",en:"Lindu LD Cloud Designer Hotel",cn:"邻度高空江景LD云端设计师酒店(解放碑步行街洪崖洞店)",addr:"重庆市渝中区新华路201号联合国际41楼",note:"Your hotel, 28 Dec – 1 Jan · 41F, United International Building, No. 201 Xinhua Rd",stay:true},
+ ckg:{c:"cq",en:"Chongqing Jiangbei Airport T3",cn:"重庆江北国际机场T3航站楼"},
+ hongyadong:{c:"cq",en:"Hongyadong",cn:"洪崖洞"},
+ jiefangbei:{c:"cq",en:"Jiefangbei",cn:"解放碑"},
+ raffles:{c:"cq",en:"Raffles City Exploration Deck + skywalk",cn:"重庆来福士 探索舱",addr:"重庆市渝中区接圣街8号"},
+ cableway:{c:"cq",en:"Yangtze River Cableway",cn:"长江索道"},
+ ciqikou:{c:"cq",en:"Ciqikou Ancient Town",cn:"磁器口古镇"},
+ t1949:{c:"cq",en:"Chongqing 1949 Grand Theatre",cn:"重庆1949大剧院"},
+ cqeast:{c:"cq",en:"Chongqing East Station",cn:"重庆东站"},
+ wulongs:{c:"cq",en:"Wulong South Station",cn:"武隆南站"},
+ sanqiao:{c:"cq",en:"Three Natural Bridges",cn:"天生三桥"},
+ longshuixia:{c:"cq",en:"Longshuixia Gorge",cn:"龙水峡地缝"},
+ zoo:{c:"cq",en:"Chongqing Zoo (pandas)",cn:"重庆动物园"},
+ liziba:{c:"cq",en:"Liziba Station (monorail through a building)",cn:"李子坝站"},
+ shibati:{c:"cq",en:"Shibati",cn:"十八梯"},
+ chaotianmen:{c:"cq",en:"Chaotianmen Square",cn:"朝天门广场"},
+ nanshan:{c:"cq",en:"Nanshan night view",cn:"南山"},
+ dali_air:{c:"dl",en:"Dali Airport",cn:"大理机场"},
+ villa:{c:"dl",en:"Mi Na Duan Seaview Villa",cn:"大理谜那端海景别墅(洱海公园店)",addr:"云南省大理市开发区滨海大道016号洱海天域半山B区B18号",note:"Your villa, 1 – 3 Jan · take the lift to the ground floor to check in",stay:true},
+ erhaipark:{c:"dl",en:"Erhai Park",cn:"洱海公园"},
+ oldtown:{c:"dl",en:"Dali Old Town",cn:"大理古城"},
+ renminlu:{c:"dl",en:"Renmin Road (Old Town)",cn:"大理古城 人民路"},
+ yangren:{c:"dl",en:"Foreigner Street (Old Town)",cn:"大理古城 洋人街"},
+ longkan:{c:"dl",en:"Longkan Wharf",cn:"龙龛码头"},
+ xizhou:{c:"dl",en:"Xizhou Ancient Town",cn:"喜洲古镇"},
+ luge:{c:"dl",en:"Cangshan luge",cn:"苍山",note:"Confirm the luge's exact pin on Amap before you go."},
+ wenbi:{c:"dl",en:"Wenbi Village",cn:"文笔村"},
+ lixiangbang:{c:"dl",en:"Ideal Bang",cn:"理想邦"},
+ dalistn:{c:"dl",en:"Dali Railway Station",cn:"大理站",addr:"大理市下关镇巍山路261号"},
+ sgl_stn:{c:"sg",en:"Shangri-La Station",cn:"香格里拉站"},
+ dukezong:{c:"sg",en:"Dukezong Old Town",cn:"独克宗古城"},
+ guishan:{c:"sg",en:"Guishan Park (giant prayer wheel)",cn:"龟山公园"},
+ songzanlin:{c:"sg",en:"Songzanlin Monastery",cn:"噶丹·松赞林寺",addr:"云南省迪庆藏族自治州香格里拉市建塘镇尼旺路3号"},
+ napa:{c:"sg",en:"Napa Lake",cn:"纳帕海"},
+ hutiao:{c:"lj",en:"Upper Tiger Leaping Gorge",cn:"上虎跳"},
+ ljoldtown:{c:"lj",en:"Lijiang Old Town",cn:"丽江古城"},
+ sifang:{c:"lj",en:"Sifang Street",cn:"丽江古城 四方街"},
+ yulong:{c:"lj",en:"Jade Dragon Snow Mountain",cn:"玉龙雪山"},
+ glacier:{c:"lj",en:"Glacier Park (Big Cable Car, 4,506m)",cn:"玉龙雪山 冰川公园"},
+ bluemoon:{c:"lj",en:"Blue Moon Valley",cn:"蓝月谷"},
+ impression:{c:"lj",en:"Impression Lijiang",cn:"印象丽江"},
+ shuhe:{c:"lj",en:"Shuhe Old Town",cn:"束河古镇"},
+ heilongtan:{c:"lj",en:"Black Dragon Pool",cn:"黑龙潭公园"},
+ ljg:{c:"lj",en:"Lijiang Sanyi Airport",cn:"丽江三义国际机场"},
+ szx:{c:"sz",en:"Shenzhen Bao'an Airport T3",cn:"深圳宝安国际机场T3航站楼"}
+};
+const DAYS=[
+ {date:"2026-12-28",c:"cq",title:"Fly in, first hotpot",sleep:"lindu",sun:"18:03",stops:[
+  {t:"14:35",title:"Fly Singapore T1 → Chongqing T3",note:"CZ2096, operated by Chongqing Airlines. Booking ref in Trip → Bookings.",place:"ckg"},
+  {t:"19:35",title:"Land at Jiangbei T3, Didi to the hotel",note:"Show the driver the hotel card. Allow about 1.5h door to door (unverified).",place:"lindu"},
+  {t:"21:30",title:"Late hotpot near the hotel",note:"Order a split pot (鸳鸯锅): spicy side for Ashley, clear side for Elijah."},
+  {t:"22:30",title:"Walk to Hongyadong, lit up",note:"A Monday, so calmer than NYE week will be.",place:"hongyadong"}]},
+ {date:"2026-12-29",c:"cq",title:"Skyline, cableway, 1949 show",sleep:"lindu",sun:"18:03",stops:[
+  {t:"10:00",title:"Raffles City Exploration Deck + skywalk",note:"Outdoor at 250m, windy. Hours and price unverified (¥180–198 reported).",place:"raffles"},
+  {t:"12:00",title:"Yangtze River Cableway, there and back",note:"Queues are common.",place:"cableway"},
+  {t:"13:00",title:"Lunch in Yuzhong"},
+  {t:"14:30",title:"Ciqikou Ancient Town",note:"Wander and snack. Skip the bright red dyed fruit.",place:"ciqikou"},
+  {t:"",title:"Chongqing 1949 show (~75 min)",note:"Book a slot: listings show 16:00, 17:00 and 19:30. Rings A and B rotate.",place:"t1949"},
+  {t:"",title:"Dinner",note:"Afternoon show → Nanshan night-view dinner. 19:30 show → eat near Ciqikou first.",place:"nanshan"}]},
+ {date:"2026-12-30",c:"cq",title:"Wulong day trip",sleep:"lindu",sun:"18:04",stops:[
+  {t:"07:00",title:"Line 6 from Xiaoshizi to Chongqing East",note:"The branch may need a change at Liujiaping. Check Amap the night before.",place:"cqeast"},
+  {t:"08:00",title:"High-speed train to Wulong South",note:"~35–40 min (unverified). Tickets open ~15 Dec.",place:"wulongs"},
+  {t:"09:00",title:"Shuttle to the Three Natural Bridges (~3h)",note:"Lots of steps down and back up. Combined ticket ~¥260 (unverified).",place:"sanqiao"},
+  {t:"13:00",title:"Longshuixia Gorge (~1.5h)",place:"longshuixia"},
+  {t:"17:00",title:"Train back to Chongqing",note:"Easy dinner near the hotel and an early night before NYE."}]},
+ {date:"2026-12-31",c:"cq",title:"Pandas, Liziba, New Year's Eve",sleep:"lindu",sun:"18:04",stops:[
+  {t:"09:00",title:"Chongqing Zoo pandas",note:"Metro Line 2 to Dongwuyuan. Pandas are usually most active in the morning.",place:"zoo"},
+  {t:"11:30",title:"Liziba monorail through the building",note:"Watch from the viewing area below the station.",place:"liziba"},
+  {t:"13:00",title:"Jiefangbei / Shibati: late lunch, shopping",place:"shibati"},
+  {t:"15:30",title:"Back to the hotel to rest and change",place:"lindu"},
+  {t:"17:30",title:"Night-view dinner (book it)",note:"Walkable from the hotel."},
+  {t:"20:30",title:"Bar near Jiefangbei"},
+  {t:"23:00",title:"Countdown at Jiefangbei, walk home",note:"Last NYE, roads here closed to cars from 18:00. Scarf and gloves.",place:"jiefangbei"}]},
+ {date:"2027-01-01",c:"dl",title:"Fly to Dali, Erhai sunset",sleep:"villa",sun:"18:39",stops:[
+  {t:"10:00",title:"Sleep in, brunch, pack",note:"Check out before 12:00. Weigh bags: 5kg carry-on limit on this flight."},
+  {t:"11:30",title:"Didi to Jiangbei T3",place:"ckg"},
+  {t:"14:00",title:"Fly Chongqing → Dali",note:"Air China CA4485 · 20kg checked, 5kg carry-on. Booking ref in Trip → Bookings."},
+  {t:"15:45",title:"Land in Dali, to the villa",note:"Use the villa's free transfer if you booked it (call a day ahead), else Didi.",place:"villa"},
+  {t:"18:00",title:"Erhai Park for sunset (~18:39)",place:"erhaipark"},
+  {t:"19:30",title:"Dali Old Town: Renmin Rd + Foreigner St",note:"Live-music bars and street food.",place:"oldtown"}]},
+ {date:"2027-01-02",c:"dl",title:"Snoopy car day",sleep:"villa",sun:"18:40",stops:[
+  {t:"08:30",title:"Breakfast at the villa",note:"Served 08:30–10:30.",place:"villa"},
+  {t:"09:15",title:"Didi to Longkan Wharf",place:"longkan"},
+  {t:"09:30",title:"Snoopy car along the west shore to Xizhou",note:"Agree the all-in price (car, driver, photos, outfits) before paying. Cold in the open car: keep the down jacket on."},
+  {t:"11:30",title:"Xizhou: 喜洲粑粑 lunch and a wander",place:"xizhou"},
+  {t:"14:30",title:"Cangshan luge",note:"~¥128 for 1 run, ¥188 for 3 (unverified).",place:"luge"},
+  {t:"17:30",title:"Wenbi Village + Ideal Bang for sunset (~18:40)",place:"lixiangbang"},
+  {t:"",title:"Dinner near the villa, pack for the train",note:"Your booking includes one afternoon tea for 2 (13:00–18:00) if you're back early."}]},
+ {date:"2027-01-03",c:"sg",title:"Train up to Shangri-La",sleep:null,sun:"18:38",stops:[
+  {t:"08:30",title:"Breakfast, check out",note:"Check out before 12:00.",place:"villa"},
+  {t:"10:00",title:"Train Dali → Shangri-La",note:"An undated timetable lists C987 10:00 → 13:18. Tickets open ~19 Dec.",place:"dalistn"},
+  {t:"13:30",title:"To the hotel",note:"Ask the hotel for a station pickup.",place:"sgl_stn"},
+  {t:"14:30",title:"Rest 1–2h",note:"First time at ~3,300m: walk slowly, drink water, no alcohol tonight. Severe headache, vomiting or breathlessness at rest: see a doctor."},
+  {t:"16:30",title:"Gentle stroll in Dukezong Old Town",place:"dukezong"},
+  {t:"19:00",title:"Dinner: yak meat hotpot"}]},
+ {date:"2027-01-04",c:"sg",title:"Monastery and horses",sleep:null,sun:"18:38",stops:[
+  {t:"09:30",title:"Songzanlin Monastery",note:"Lots of steps, go slowly. Gedong Festival may run 3–7 Jan (unverified).",place:"songzanlin"},
+  {t:"12:00",title:"Horse riding at Napa Lake",note:"Warmest part of the day. Agree price and ride length before getting on.",place:"napa"},
+  {t:"15:00",title:"Café and rest in Dukezong",place:"dukezong"},
+  {t:"18:15",title:"Giant prayer wheel at sunset (~18:38)",note:"Stairs up, skip if you're breathless.",place:"guishan"}]},
+ {date:"2027-01-05",c:"lj",title:"Tiger Leaping Gorge to Lijiang",sleep:null,sun:"18:39",stops:[
+  {t:"08:30",title:"Private driver from the Shangri-La hotel"},
+  {t:"11:30",title:"Upper Tiger Leaping Gorge viewpoint (~2h)",note:"Stairs down to the rapids, the climb back is the hard part. Entry ~¥65 (unverified).",place:"hutiao"},
+  {t:"13:30",title:"Lunch near the gorge"},
+  {t:"16:00",title:"Arrive in Lijiang"},
+  {t:"19:00",title:"Lijiang Old Town, dinner around Sifang Street",place:"sifang"}]},
+ {date:"2027-01-06",c:"lj",title:"Jade Dragon Snow Mountain",sleep:null,sun:"18:40",stops:[
+  {t:"07:00",title:"Driver pickup to the mountain",place:"yulong"},
+  {t:"08:30",title:"Big Cable Car to Glacier Park (4,506m)",note:"Real-name, time-slotted tickets: carry the passport you booked with. Use oxygen on the way up, keep ~1h at the top.",place:"glacier"},
+  {t:"11:30",title:"Blue Moon Valley",place:"bluemoon"},
+  {t:"13:20",title:"Optional: Impression Lijiang",note:"A 2025 listing shows 13:20 and 14:50 shows. Unverified for Jan 2027.",place:"impression"},
+  {t:"16:00",title:"Back to Lijiang, splurge hotel, rest"},
+  {t:"19:00",title:"Old Town or Shuhe Old Town",place:"shuhe"}]},
+ {date:"2027-01-07",c:"sz",title:"Fly to Shenzhen",sleep:null,sun:"17:55",stops:[
+  {t:"08:00",title:"Leave for Lijiang airport",note:"Arrive 3h before, as Trip.com recommends.",place:"ljg"},
+  {t:"11:45",title:"Fly Lijiang → Shenzhen T3",note:"CZ8582 · separate bookings: sit together. Refs in Trip → Bookings."},
+  {t:"14:10",title:"Land at Bao'an T3, to the airport hotel",note:"Bags may stay checked through: ask China Southern. Overnight bag in carry-on.",place:"szx"},
+  {t:"",title:"Free evening near the hotel"}]},
+ {date:"2027-01-08",c:"home",title:"Home",sleep:null,sun:"",stops:[
+  {t:"05:30",title:"At Bao'an T3 for check-in",place:"szx"},
+  {t:"08:00",title:"Fly Shenzhen → Singapore",note:"CZ8117"},
+  {t:"12:10",title:"Land at Changi T1"}]}
+];
+const FOOD=[
+ {id:"f-hotpot",c:"cq",en:"Chongqing hotpot",cn:"火锅",spice:"split",tip:"Order 鸳鸯锅 (split pot): 清汤 clear side for Elijah."},
+ {id:"f-xiaomian",c:"cq",en:"Chongqing noodles",cn:"重庆小面",spice:"ask",tip:"Normally spicy. Ask 不要辣."},
+ {id:"f-chaoshou",c:"cq",en:"Wontons",cn:"抄手",spice:"ask",tip:"清汤抄手 (clear broth) for Elijah, 红油抄手 (chilli oil) for Ashley."},
+ {id:"f-suanlafen",c:"cq",en:"Hot & sour sweet potato noodles",cn:"酸辣粉",spice:"hot",tip:"Ashley's one."},
+ {id:"f-laziji",c:"cq",en:"Chongqing chilli chicken",cn:"辣子鸡",spice:"hot",tip:"Ashley's one."},
+ {id:"f-bingfen",c:"cq",en:"Ice jelly dessert",cn:"冰粉",spice:"mild",tip:"Cools the mouth after hotpot."},
+ {id:"f-baba",c:"dl",en:"Xizhou baba flatbread",cn:"喜洲粑粑",spice:"mild",tip:"Sweet or savoury. Eat it in Xizhou on 2 Jan."},
+ {id:"f-rushan",c:"dl",en:"Grilled milk fan",cn:"乳扇",spice:"mild",tip:"Bai dairy snack."},
+ {id:"f-erkuai",c:"dl",en:"Erkuai rice cake",cn:"饵块",spice:"mild",tip:""},
+ {id:"f-xianhuabing",c:"dl",en:"Flower cake",cn:"鲜花饼",spice:"mild",tip:"Yunnan rose pastry, good to bring home."},
+ {id:"f-yak",c:"sg",en:"Yak meat hotpot",cn:"牦牛肉火锅",spice:"ask",tip:"Planned for 3 Jan dinner."},
+ {id:"f-butter",c:"sg",en:"Butter tea",cn:"酥油茶",spice:"mild",tip:"Salty, not sweet."},
+ {id:"f-tsampa",c:"sg",en:"Tsampa (roasted barley)",cn:"糌粑",spice:"mild",tip:""},
+ {id:"f-lapaigu",c:"lj",en:"Cured pork rib hotpot",cn:"腊排骨火锅",spice:"mild",tip:"Lijiang's signature hotpot."},
+ {id:"f-jidou",c:"lj",en:"Chickpea jelly",cn:"鸡豆凉粉",spice:"ask",tip:"Ask 不要辣."},
+ {id:"f-ljbaba",c:"lj",en:"Lijiang baba",cn:"丽江粑粑",spice:"mild",tip:""},
+ {id:"f-mixian",c:"lj",en:"Crossing-the-bridge noodles",cn:"过桥米线",spice:"mild",tip:"Yunnan classic, anywhere in Yunnan."},
+ {id:"f-jun",c:"lj",en:"Wild mushroom hotpot",cn:"野生菌火锅",spice:"mild",tip:"Only at reputable restaurants."},
+ {id:"f-yue",c:"sz",en:"Cantonese dinner",cn:"粤菜",spice:"mild",tip:"Easy last-night meal near the airport."}
+];
+const SPICE={mild:{l:"Mild",s:"Safe for Elijah"},ask:{l:"Ask mild",s:"Say 不要辣"},split:{l:"Split pot",s:"Both happy"},hot:{l:"Spicy",s:"Ashley's"}};
+const PHOTO=[
+ {id:"p-hyd",c:"cq",title:"Hongyadong lit up",when:"After dark. One visitor said lights were on by 19:30 in November.",place:"hongyadong"},
+ {id:"p-raffles",c:"cq",title:"Skyline from the Raffles skywalk",when:"Daytime on 29 Dec; sunset ~18:03 if you go back up.",place:"raffles"},
+ {id:"p-liziba",c:"cq",title:"Monorail through the building",when:"Any time, wait for a train to pass.",place:"liziba"},
+ {id:"p-ctm",c:"cq",title:"Chaotianmen river lights",when:"Night. Drone shows run here some evenings.",place:"chaotianmen"},
+ {id:"p-ciqikou",c:"cq",title:"Ciqikou lanes",when:"Afternoon, 29 Dec.",place:"ciqikou"},
+ {id:"p-erhai",c:"dl",title:"Erhai Park sunset",when:"~18:39 on 1 Jan.",place:"erhaipark"},
+ {id:"p-tree",c:"dl",title:"Tree in the lake at Longkan (海中树)",when:"Morning, before the Snoopy car on 2 Jan.",place:"longkan"},
+ {id:"p-snoopy",c:"dl",title:"Snoopy car on the west-shore road",when:"Morning, 2 Jan.",place:"xizhou"},
+ {id:"p-ideal",c:"dl",title:"Ideal Bang / Wenbi sunset",when:"~18:40 on 2 Jan.",place:"lixiangbang"},
+ {id:"p-szl",c:"sg",title:"Songzanlin over the lake in front",when:"Morning, 4 Jan.",place:"songzanlin"},
+ {id:"p-napa",c:"sg",title:"On horseback at Napa Lake",when:"Midday, 4 Jan.",place:"napa"},
+ {id:"p-wheel",c:"sg",title:"Giant prayer wheel",when:"Sunset ~18:38 on 4 Jan.",place:"guishan"},
+ {id:"p-gorge",c:"lj",title:"Tiger rock at Upper Tiger Leaping Gorge",when:"Midday, 5 Jan.",place:"hutiao"},
+ {id:"p-glacier",c:"lj",title:"Glacier Park boardwalk, 4,506m",when:"Morning, 6 Jan. Sunglasses for the glare.",place:"glacier"},
+ {id:"p-bluemoon",c:"lj",title:"Blue Moon Valley pools",when:"Late morning, 6 Jan.",place:"bluemoon"},
+ {id:"p-heilong",c:"lj",title:"Jade Dragon from Black Dragon Pool",when:"Any clear day in Lijiang.",place:"heilongtan"},
+ {id:"p-ljnight",c:"lj",title:"Lijiang Old Town lanes at night",when:"Evening, 5 or 6 Jan.",place:"ljoldtown"}
+];
+/* Route map: real lat/lon projected onto a 360×240 sheet */
+const MAPCITY={cq:{lat:29.56,lon:106.55,lx:10,ly:-14,a:"start"},dl:{lat:25.6,lon:100.25,lx:14,ly:12,a:"start"},sg:{lat:27.83,lon:99.70,lx:10,ly:-12,a:"start"},lj:{lat:26.87,lon:100.23,lx:14,ly:2,a:"start"},sz:{lat:22.63,lon:113.81,lx:-12,ly:-14,a:"end"}};
+const LEGS=[{from:"sin",to:"cq",date:"2026-12-28",mode:"flight"},{from:"cq",to:"dl",date:"2027-01-01",mode:"flight"},{from:"dl",to:"sg",date:"2027-01-03",mode:"train"},{from:"sg",to:"lj",date:"2027-01-05",mode:"road"},{from:"lj",to:"sz",date:"2027-01-07",mode:"flight"},{from:"sz",to:"sin",date:"2027-01-08",mode:"flight"}];
+const TRIP_START="2026-12-28", TRIP_END="2027-01-08";
+const TODO_GROUPS={now:"Book now",dec:"December",ground:"On the trip"};
+const PACK_GROUPS={wear:"Clothes",gear:"Gear",docs:"Documents & money"};
+const PEOPLE=["Elijah","Ashley"];
+
+/* ===================== HELPERS ===================== */
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const ls={get(k,d){try{const v=localStorage.getItem("cqyn:"+k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem("cqyn:"+k,JSON.stringify(v))}catch(e){}}};
+const ICON={
+ today:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+ plan:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5C6.5 4 9 4 12 6c3-2 5.5-2 8-.5V19c-2.5-1.5-5-1.5-8 .5-3-2-5.5-2-8-.5z"/><path d="M12 6v13.5"/></svg>',
+ map:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6.5l6-2.5 6 2.5 6-2.5v13.5l-6 2.5-6-2.5-6 2.5z"/><path d="M9 4v13.5M15 6.5V20"/></svg>',
+ ideas:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg>',
+ trip:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16v4a2 2 0 0 0 0 4v4H4v-4a2 2 0 0 0 0-4z"/><path d="M14 7v12" stroke-dasharray="2 2.5"/></svg>',
+ money:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="2.5" y="6" width="19" height="12" rx="3"/><circle cx="12" cy="12" r="2.6"/></svg>',
+ check:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>'
+};
+const TABS=[["today","Today"],["plan","Days"],["map","Map"],["ideas","Ideas"],["trip","Trip"],["money","Money"]];
+function cstNow(){const n=new Date();
+ const date=new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Shanghai",year:"numeric",month:"2-digit",day:"2-digit"}).format(n);
+ const hm=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Shanghai",hour:"2-digit",minute:"2-digit",hour12:false}).format(n).split(":");
+ return {date,mins:(+hm[0]%24)*60+(+hm[1])};}
+const dayDiff=(a,b)=>Math.round((Date.parse(b+"T00:00:00Z")-Date.parse(a+"T00:00:00Z"))/864e5);
+const fmtDate=(d,opt={weekday:"short",day:"numeric",month:"short"})=>new Date(d+"T12:00:00Z").toLocaleDateString("en-GB",{...opt,timeZone:"UTC"});
+const tMins=t=>{const m=/(\d{1,2}):(\d{2})/.exec(t||"");return m?+m[1]*60+ +m[2]:null};
+function amap(p){return "https://uri.amap.com/search?keyword="+encodeURIComponent(p.cn)+"&city="+encodeURIComponent(CITY_CN[p.c]||"")+"&view=map&src=cqyn-trip&callnative=1"}
+function gmap(p){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(p.cn+" "+(CITY_CN[p.c]||""))}
+function toast(msg){const t=$("#toast");t.textContent=msg;t.hidden=false;clearTimeout(toast._t);toast._t=setTimeout(()=>t.hidden=true,2800)}
+async function copyText(text,label){try{await navigator.clipboard.writeText(text);toast((label||"Copied")+" ✓")}catch(e){const el=document.getElementById("copybuf")||Object.assign(document.body.appendChild(document.createElement("div")),{id:"copybuf"});el.textContent=text;el.style.cssText="position:fixed;left:-9999px";const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);toast("Selected. Long-press to copy")}}
+const cssVar=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+function celebrate(){try{if(typeof confetti==="function"&&!matchMedia("(prefers-reduced-motion: reduce)").matches)confetti({particleCount:90,spread:70,origin:{y:.7},colors:[cssVar("--cq"),cssVar("--dl"),cssVar("--sg"),cssVar("--lj"),cssVar("--sz")]})}catch(e){}}
+
+/* ===================== SHARED STATE (db + assets) ===================== */
+const S={checks:{},wishlist:[],expenses:[],todos:[],packing:[],bookings:[],photos:[],notes:[],ok:false,readOnly:false,db:null,assets:null,state:"connecting",uploading:0};
+const ME={get name(){return ls.get("me","Elijah")},set name(v){ls.set("me",v)}};
+function setSync(state){S.state=state;const el=$("#sync");
+ el.className="pill"+(state==="live"?" ok":state==="connecting"?"":" bad");
+ el.textContent=state==="live"?(S.readOnly?"view only":"synced"):state==="connecting"?"connecting…":state==="stale"?"offline copy":"not syncing";}
+async function initDb(){
+ let db=null;
+ try{db=window.claude&&window.claude.use?await window.claude.use("db"):null}catch(e){db=null}
+ try{const u=window.claude&&window.claude.use?await window.claude.use("user"):null;if(u){const c=await u.can("data.write");if(c===false)S.readOnly=true}}catch(e){}
+ try{S.assets=window.claude&&window.claude.use?await window.claude.use("assets"):null}catch(e){S.assets=null}
+ if(!db){setSync("none");render();return}
+ S.db=db;
+ const timer=setTimeout(()=>{if(!S.ok)setSync("stale")},10000);
+ const sub=(name,fn)=>db.collection(name).onSnapshot(snap=>{fn(snap);if(!snap.metadata.fromCache){S.ok=true;clearTimeout(timer);setSync("live")}render()},err=>{clearTimeout(timer);setSync("none");render()});
+ sub("checks",s=>{const o={};s.docs.forEach(d=>{o[d.id]=!!(d.data()||{}).done});S.checks=o});
+ const list=k=>s=>{S[k]=s.docs.map(d=>({id:d.id,...d.data()}))};
+ ["wishlist","expenses","todos","packing","bookings","photos","notes"].forEach(k=>sub(k,list(k)));
+}
+async function write(fn){
+ if(!S.db){toast("Shared lists aren't available here");return false}
+ if(S.readOnly){toast("View only: ask Elijah to invite you as an Editor");return false}
+ try{await fn(S.db);return true}catch(e){
+  if(e&&e.code==="invalid_argument"){S.readOnly=true;setSync(S.state);toast("View only: ask Elijah to invite you as an Editor");render()}
+  else if(e&&e.code==="quota_exceeded"){toast("The list is full. Delete some old entries.")}
+  else toast("Couldn't save. Check your connection and try again.");
+  return false}}
+const canEdit=()=>!!S.db&&!S.readOnly;
+const isDone=id=>!!S.checks[id];
+async function toggleCheck(id){const before=stampState();const v=!isDone(id);S.checks[id]=v;render();checkNewStamps(before);await write(db=>db.doc("checks/"+id).set({done:v,at:Date.now()}))}
+async function toggleDoc(col,id){const it=S[col].find(x=>x.id===id);if(!it)return;const v=!it.done;it.done=v;render();await write(db=>db.doc(col+"/"+id).update({done:v}))}
+async function removeDoc(col,id){S[col]=S[col].filter(x=>x.id!==id);render();await write(db=>db.doc(col+"/"+id).delete())}
+async function addDoc(col,data){return write(db=>db.collection(col).add({...data,createdAt:Date.now()}))}
+
+/* ===================== STAMPS ===================== */
+const STAMP_CITIES=["cq","dl","sg","lj","sz"];
+function cityStops(c){const ids=[];DAYS.forEach(d=>{if(d.c===c)d.stops.forEach((s,i)=>ids.push("s-"+d.date+"-"+i))});return ids}
+function stampInfo(c){const ids=cityStops(c);const done=ids.filter(isDone).length;const need=Math.ceil(ids.length/2);return {done,total:ids.length,need,got:done>=need}}
+function stampState(){const o={};STAMP_CITIES.forEach(c=>o[c]=stampInfo(c).got);return o}
+let thudCity=null;
+function checkNewStamps(before){const after=stampState();const seen=ls.get("stampsSeen",{});
+ const fresh=STAMP_CITIES.find(c=>after[c]&&!before[c]&&!seen[c]);
+ if(fresh){seen[fresh]=true;ls.set("stampsSeen",seen);thudCity=fresh;toast(CITIES[fresh]+" stamp collected!");celebrate();render()}}
+function dateRange(c){const ds=DAYS.filter(d=>d.c===c);if(!ds.length)return"";const a=fmtDate(ds[0].date,{day:"numeric",month:"short"}),b=fmtDate(ds[ds.length-1].date,{day:"numeric",month:"short"});return a===b?a:a+" – "+b}
+function stampHTML(c,i){const s=stampInfo(c);const rot=[-9,7,-4,10,-7][i%5];
+ return s.got?`<div class="pstamp got city-${c} ${thudCity===c?"thud":""}" style="--rot:${rot}deg"><div><div class="en">${esc(CITIES[c])}</div><div class="zh">${esc(CITY_CN[c])}</div><div>${dateRange(c)}</div></div></div>`
+ :`<div class="pstamp"><div><div class="en" style="font-size:18px">${esc(CITIES[c])}</div><div>tick ${s.need-s.done} more stop${s.need-s.done===1?"":"s"}</div></div></div>`}
+
+/* ===================== VIEW STATE ===================== */
+const V={tab:"today",day:ls.get("day",null),ideas:ls.get("ideas","wish"),trip:ls.get("trip","bookings"),placeCity:ls.get("placeCity","all"),ideaCity:ls.get("ideaCity","all"),flip:null,confirmDel:null};
+const ROUTES=[...TABS.map(t=>t[0]),"summary"];
+function routeFromHash(){const h=(location.hash||"").slice(1);V.tab=ROUTES.includes(h)?h:"today"}
+
+/* ===================== RENDERERS ===================== */
+const tick=(on,attrs)=>`<button class="tick" aria-pressed="${on}" ${attrs} ${canEdit()?"":"disabled"}>${ICON.check}</button>`;
+function placeBtns(id,{compact}={}){const p=P[id];if(!p)return"";return `<div class="row">
+ <button class="btn small primary" data-driver="${id}">Show driver</button>
+ <a class="btn small" href="${amap(p)}" target="_blank" rel="noopener">Amap</a>
+ ${compact?"":`<a class="btn small ghost" href="${gmap(p)}" target="_blank" rel="noopener">Google Maps</a>
+ <button class="btn small ghost" data-copy="${esc(p.addr||p.cn)}">Copy 中文</button>`}</div>`}
+function weatherCard(d){const w=WEATHER[d.c];if(!w)return `<div class="card tape l"><h3>Weather</h3><p class="muted" style="margin:6px 0 0">No January average on file for ${CITIES[d.c]||"this stop"}. Check the forecast a few days before.</p></div>`;
+ return `<div class="card tape l city-${d.c} wx"><div class="temp">${w.lo}°<span class="muted">/</span>${w.hi}°</div><div><h3>${esc(w.cond)}</h3><p style="margin:4px 0 0">${esc(w.wear)}</p><p class="muted" style="margin:4px 0 0;font-size:12px">January average for ${CITIES[d.c]}${d.sun?` · sunset ~${d.sun}`:""}. Not a forecast.</p></div></div>`}
+function sleepLine(d){if(!d.sleep)return d.c==="home"?"":`<span class="chip">Sleep: not booked yet</span>`;return `<span class="chip">Sleep: ${esc(P[d.sleep].en)}</span>`}
+function emptyLists(what){return `<div class="empty">${S.state==="connecting"?`Loading your ${what}…`:S.db?`No ${what} yet. Add the first one above.`:`Your shared ${what} shows up when this page is opened on claude.ai while signed in.`}</div>`}
+function banner(){if(S.state==="none")return `<div class="banner">Shared lists aren't reachable right now, so ticks, photos and notes won't save. The plan, map and driver cards still work.</div>`;if(S.state==="stale")return `<div class="banner">Can't reach the shared lists yet. Showing what's saved on this phone, which may be out of date.</div>`;if(S.readOnly)return `<div class="banner">You can view this page but not edit it. Ask Elijah to invite you as an Editor so your ticks and photos save.</div>`;return ""}
+
+function renderToday(){
+ const n=cstNow();const before=n.date<TRIP_START,after=n.date>TRIP_END;
+ const idx=DAYS.findIndex(d=>d.date===n.date);
+ if(before){
+  const left=dayDiff(n.date,TRIP_START);const d=DAYS[0];
+  const open=S.todos.filter(t=>!t.done).sort(sortTodo).slice(0,4);
+  return `<div class="stack">
+  <section class="hero city-cq"><div class="stamp">CKG<br>28 DEC</div><div class="hero-copy">
+   <div class="big"><span class="rn-underline">${left} day${left===1?"":"s"}</span></div><p><b>until you fly to Chongqing.</b> 12 days, 5 cities, 5 stamps to collect.</p></div></section>
+  ${banner()}
+  <div class="card tape city-dl"><div class="row" style="justify-content:space-between"><h3>Still to sort</h3><a class="btn small ghost" href="#trip" data-tripseg="todos">All to-dos</a></div>
+   ${S.todos.length?(open.length?`<div>${open.map(todoRow).join("")}</div>`:`<p class="muted">Everything's ticked off.</p>`):emptyLists("to-dos")}</div>
+  <div class="card tape r city-cq"><span class="sticker">Day 1 preview</span><h3 style="margin-top:8px">${fmtDate(d.date)} · ${esc(d.title)}</h3>
+   <ul class="timeline">${d.stops.slice(0,3).map((s,i)=>stopRow(d,s,i)).join("")}</ul><a class="btn small" href="#plan" data-goday="${d.date}">See the full plan</a></div>
+  <a class="btn" href="#summary">Peek at our trip book</a>
+  </div>`}
+ if(after){return `<div class="stack"><section class="hero city-home"><div class="big">Welcome home</div><p>Your trip book is ready. Settle up in Money.</p></section><a class="btn primary" href="#summary">Open our trip book</a></div>`}
+ const d=DAYS[idx];let nowI=-1;d.stops.forEach((s,i)=>{const m=tMins(s.t);if(m!=null&&m<=n.mins)nowI=i});
+ const nowS=d.stops[nowI],nextS=d.stops[nowI+1];
+ return `<div class="stack">
+ <section class="hero city-${d.c}"><div class="stamp">DAY<br>${idx+1}/12</div><div class="hero-copy">
+  <div class="big">${esc(CITIES[d.c])}</div><p><b>${fmtDate(d.date,{weekday:"long",day:"numeric",month:"short"})}</b> · ${esc(d.title)}</p></div></section>
+ ${banner()}
+ <div class="stack city-${d.c}" style="gap:12px">
+  <div class="nn"><div class="lbl rn-circle">Now</div><div class="what">${nowS?esc(nowS.title):"Morning, nothing scheduled yet"}</div>${nowS&&nowS.place?placeBtns(nowS.place,{compact:true}):""}</div>
+  <div class="nn"><div class="lbl">Next${nextS&&nextS.t?" · "+esc(nextS.t):""}</div><div class="what">${nextS?esc(nextS.title):"Done for today"}</div>${nextS&&nextS.note?`<div class="muted">${esc(nextS.note)}</div>`:""}${nextS&&nextS.place?placeBtns(nextS.place,{compact:true}):""}</div>
+ </div>
+ ${weatherCard(d)}
+ ${d.sleep?`<div class="card tape r"><h3>Tonight's bed</h3><p style="margin:4px 0 8px">${esc(P[d.sleep].en)}</p>${placeBtns(d.sleep)}</div>`:`<div class="card tape r"><h3>Tonight's bed</h3><p class="muted" style="margin:4px 0 0">Not booked yet. Add it in Trip → Bookings once it's done.</p></div>`}
+ <div class="row"><a class="btn" href="#plan" data-goday="${d.date}">Today's page</a><a class="btn ghost" href="#summary">Trip book</a></div>
+ </div>`}
+
+function stopRow(d,s,i){const id="s-"+d.date+"-"+i;const done=isDone(id);
+ return `<li class="stop ${done?"done":""}"><div class="t">${esc(s.t||"·")}</div>${tick(done,`data-check="${id}" aria-label="Mark ${esc(s.title)} done"`)}
+ <div class="body"><div class="title">${esc(s.title)}</div>${s.note?`<div class="note">${esc(s.note)}</div>`:""}${s.place?`<div style="margin-top:6px">${placeBtns(s.place,{compact:true})}</div>`:""}</div></li>`}
+
+function photoFig(p){const confirm=V.confirmDel===p.id;
+ return `<figure class="polaroid"><img src="/_blob/${esc(p.asset)}" alt="${esc(p.caption||"Trip photo")}" loading="lazy" data-ph="${esc(p.id)}">
+  <figcaption>${esc(p.caption||"")}<div class="by">${esc(p.by||"")}</div></figcaption>
+  ${canEdit()?(confirm?`<button class="btn small danger" style="position:absolute;top:6px;right:6px" data-delphoto="${esc(p.id)}">Delete?</button>`:`<button class="del" data-askdel="${esc(p.id)}" aria-label="Delete photo">×</button>`):""}</figure>`}
+function scrapbookSection(d){
+ const photos=S.photos.filter(p=>p.day===d.date).sort((a,b)=>(a.createdAt||0)-(b.createdAt||0));
+ const note=name=>{const n=S.notes.find(x=>x.id===d.date+"-"+name);return n?n.text||"":""};
+ const canUp=canEdit()&&!!S.assets;
+ return `<section class="card tape r city-${d.c}">
+  <div class="row" style="justify-content:space-between"><h3>Scrapbook</h3><span class="chip">${photos.length} photo${photos.length===1?"":"s"}</span></div>
+  ${photos.length?`<div class="photos">${photos.map(photoFig).join("")}</div>`:`<p class="hand muted" style="margin:6px 0">No photos yet. Add the first one from today.</p>`}
+  ${canUp?`<div class="row" style="margin-top:12px"><input type="text" id="capText" placeholder="Caption (optional)" maxlength="80" style="flex:1;min-width:140px"><button class="btn primary" data-addphoto="${d.date}" ${S.uploading?"disabled":""}>${S.uploading?`Uploading ${S.uploading}…`:"Add photos"}</button></div>`
+   :`<p class="muted" style="font-size:13px;margin:8px 0 0">${S.db?"Only editors can add photos. Ask Elijah to invite you as an Editor.":"Photos show up when this page is opened on claude.ai while signed in."}</p>`}
+  <div class="notes" style="margin-top:16px">${PEOPLE.map(name=>`<div class="note-card"><label for="note-${name}">${name}'s best moment</label><textarea id="note-${name}" data-note="${d.date}|${name}" placeholder="Write it down…" maxlength="600" ${canEdit()?"":"disabled"}>${esc(note(name))}</textarea></div>`).join("")}</div>
+ </section>`}
+
+function renderPlan(){
+ const n=cstNow();let sel=V.day&&DAYS.find(d=>d.date===V.day)?V.day:(DAYS.find(d=>d.date===n.date)?n.date:DAYS[0].date);V.day=sel;
+ const d=DAYS.find(x=>x.date===sel);const i=DAYS.indexOf(d);const prev=DAYS[i-1],next=DAYS[i+1];
+ const flip=V.flip;V.flip=null;
+ return `<div class="stack">
+ <div class="daypick" role="group" aria-label="Pick a day">${DAYS.map(x=>`<button class="city-${x.c}" data-day="${x.date}" aria-pressed="${x.date===sel}"><div class="m">${new Date(x.date+"T12:00:00Z").toLocaleDateString("en-GB",{weekday:"short",timeZone:"UTC"})}</div><div class="d">${+x.date.slice(8)}</div><div class="m">${esc(CITIES[x.c])}</div></button>`).join("")}</div>
+ <div id="page" class="stack ${flip?"flip-in"+(flip==="back"?" back":""):""}">
+ <section class="card tape city-${d.c}">
+  <div class="row"><span class="chip citytag">Day ${i+1} · ${esc(CITIES[d.c])}</span>${sleepLine(d)}</div>
+  <h2 style="margin-top:8px"><span class="rn-underline">${fmtDate(d.date,{weekday:"long",day:"numeric",month:"long"})}</span></h2>
+  <p class="hand muted" style="margin:2px 0 6px">${esc(d.title)}</p>
+  <ul class="timeline">${d.stops.map((s,k)=>stopRow(d,s,k)).join("")}</ul>
+ </section>
+ ${scrapbookSection(d)}
+ ${weatherCard(d)}
+ </div>
+ <div class="pagenav"><button class="btn ghost" data-day="${prev?prev.date:""}" ${prev?"":"disabled"} aria-label="Previous day">← ${prev?fmtDate(prev.date,{day:"numeric",month:"short"}):""}</button><span class="hand muted">swipe to flip</span><button class="btn ghost" data-day="${next?next.date:""}" ${next?"":"disabled"} aria-label="Next day">${next?fmtDate(next.date,{day:"numeric",month:"short"}):""} →</button></div>
+ </div>`}
+
+function proj(c){const m=MAPCITY[c];return {x:20+(m.lon-98.5)/(115-98.5)*320,y:20+(31-m.lat)/(31-21.5)*200}}
+function renderMap(){
+ const cities=["all","cq","dl","sg","lj","sz"];const c=V.placeCity;
+ const list=Object.entries(P).filter(([,p])=>c==="all"||p.c===c).sort((a,b)=>(b[1].stay?1:0)-(a[1].stay?1:0));
+ const got=STAMP_CITIES.filter(x=>stampInfo(x).got).length;
+ return `<div class="stack">
+ <section class="card tape"><div class="row" style="justify-content:space-between"><h3>Our route</h3><span class="chip">${got}/5 stamps</span></div>
+  <div class="mapbox" id="mapbox"><svg id="routeSvg" viewBox="0 0 360 240" role="img" aria-label="Hand-drawn route: Singapore to Chongqing, Dali, Shangri-La, Lijiang, Shenzhen and home"></svg></div>
+  <p class="muted" style="font-size:13px;margin:4px 0 0">Tap a city to see its places. Solid lines are legs you've done.</p></section>
+ <section class="card tape l"><h3>Passport stamps</h3><p class="muted" style="margin:2px 0 12px;font-size:14px">Tick off half of a city's stops to ink its stamp.</p><div class="stamps">${STAMP_CITIES.map(stampHTML).join("")}</div></section>
+ <div class="seg" role="group" aria-label="City" id="places">${cities.map(k=>`<button data-placecity="${k}" aria-pressed="${k===c}">${k==="all"?"All":esc(CITIES[k])}</button>`).join("")}</div>
+ <p class="muted" style="margin:0">Tap <b>Show driver</b> for a big Chinese card to show a Didi driver.</p>
+ <div class="card">${list.map(([id,p])=>`<div class="place city-${p.c}"><div class="row"><span class="chip citytag">${esc(CITIES[p.c])}</span>${p.stay?'<span class="sticker">Your stay</span>':""}</div>
+  <div><div style="font-weight:800">${esc(p.en)}</div><div class="cn">${esc(p.cn)}</div>${p.addr?`<div class="addr">${esc(p.addr)}</div>`:""}${p.note?`<div class="muted" style="font-size:13px">${esc(p.note)}</div>`:""}</div>${placeBtns(id)}</div>`).join("")}</div></div>`}
+function drawMap(){
+ const svg=document.getElementById("routeSvg");if(!svg)return;svg.innerHTML="";
+ const ink=cssVar("--ink"),soft=cssVar("--ink-soft"),line=cssVar("--line"),acc=cssVar("--accent");
+ const today=cstNow().date;const SIN={x:348,y:236};
+ const pt=k=>k==="sin"?SIN:proj(k);
+ const ns="http://www.w3.org/2000/svg";const mk=(tag,attrs,text)=>{const e=document.createElementNS(ns,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(text!=null)e.textContent=text;return e};
+ const rc=typeof rough!=="undefined"?rough.svg(svg):null;
+ // land blob hint + compass
+ if(rc){svg.appendChild(rc.path("M12 30 C 70 6, 160 14, 230 24 S 330 60, 340 120 S 300 210, 250 222 S 120 236, 40 210 S 4 120, 12 30 Z",{stroke:line,strokeWidth:1.2,roughness:2.2,fill:line,fillStyle:"dots",hachureGap:9,fillWeight:.6,seed:4}))}
+ svg.appendChild(mk("text",{x:330,y:24,class:"mapmode","text-anchor":"middle"},"N ↑"));
+ LEGS.forEach((L,i)=>{const a=pt(L.from),b=pt(L.to);const done=today>=L.date;
+  const mx=(a.x+b.x)/2+(L.mode==="flight"?(b.y-a.y)*.18:0),my=(a.y+b.y)/2-(L.mode==="flight"?Math.abs(b.x-a.x)*.18+8:0);
+  const opts={stroke:done?acc:soft,strokeWidth:done?2.4:1.6,roughness:1.4,seed:10+i,strokeLineDash:done?undefined:[5,6]};
+  if(rc)svg.appendChild(rc.curve([[a.x,a.y],[mx,my],[b.x,b.y]],opts));
+  else svg.appendChild(mk("path",{d:`M${a.x} ${a.y} Q${mx} ${my} ${b.x} ${b.y}`,fill:"none",stroke:opts.stroke,"stroke-width":opts.strokeWidth,"stroke-dasharray":done?"":"5 6"}));
+  if(L.mode!=="flight"||i===1||i===4){const t=mk("text",{x:mx+(L.mode==="flight"?0:-14),y:my+(L.mode==="flight"?-3:4),class:"mapmode","text-anchor":"middle"},L.mode);svg.appendChild(t)}
+ });
+ svg.appendChild(mk("text",{x:SIN.x-4,y:SIN.y-6,class:"maplabel","text-anchor":"end"},"to/from Singapore"));
+ STAMP_CITIES.forEach((c,i)=>{const p=proj(c),m=MAPCITY[c];const col=cssVar("--"+c);const got=stampInfo(c).got;
+  const g=mk("a",{href:"#map","data-placecity":c,"aria-label":CITIES[c]+" places"});
+  if(rc)g.appendChild(rc.circle(p.x,p.y,c==="cq"||c==="sz"?18:15,{fill:col,fillStyle:got?"solid":"hachure",hachureGap:3,stroke:ink,strokeWidth:1.4,roughness:1.6,seed:30+i}));
+  else g.appendChild(mk("circle",{cx:p.x,cy:p.y,r:8,fill:col,stroke:ink}));
+  g.appendChild(mk("circle",{cx:p.x,cy:p.y,r:20,fill:"transparent"}));
+  g.appendChild(mk("text",{x:p.x+m.lx,y:p.y+m.ly,class:"maplabel","text-anchor":m.a},CITIES[c]+(got?" ✓":"")));
+  g.appendChild(mk("text",{x:p.x+m.lx,y:p.y+m.ly+11,class:"maplabel cn","text-anchor":m.a},CITY_CN[c]));
+  svg.appendChild(g)});
+}
+
+function cityFilter(attr,cur){return `<div class="seg" role="group" aria-label="City">${["all","cq","dl","sg","lj","sz"].map(k=>`<button data-${attr}="${k}" aria-pressed="${k===cur}">${k==="all"?"All":esc(CITIES[k])}</button>`).join("")}</div>`}
+function renderIdeas(){
+ const seg=V.ideas,c=V.ideaCity;
+ const head=`<div class="seg" role="group" aria-label="Ideas"><button data-ideas="wish" aria-pressed="${seg==="wish"}">Wishlist</button><button data-ideas="food" aria-pressed="${seg==="food"}">Food</button><button data-ideas="photo" aria-pressed="${seg==="photo"}">Photo spots</button></div>${cityFilter("ideacity",c)}`;
+ if(seg==="food"){const list=FOOD.filter(f=>c==="all"||f.c===c);const tried=FOOD.filter(f=>isDone(f.id)).length;
+  return `<div class="stack">${head}<div class="banner">Say <span style="font-family:var(--f-cn)">不要辣</span> (bú yào là) for no chilli, <span style="font-family:var(--f-cn)">微辣</span> (wēi là) for a little.</div>
+  <div class="card tape"><div class="row" style="justify-content:space-between"><h3>Must-eats</h3><span class="chip">${tried}/${FOOD.length} tried</span></div>
+  ${list.map(f=>`<div class="item ${isDone(f.id)?"done":""}">${tick(isDone(f.id),`data-check="${f.id}" aria-label="Tried ${esc(f.en)}"`)}<div class="main"><div class="name">${esc(f.en)} <span class="cn">${esc(f.cn)}</span></div><div class="row" style="margin-top:3px"><span class="chip citytag city-${f.c}">${esc(CITIES[f.c])}</span><span class="chip">${SPICE[f.spice].l} · ${SPICE[f.spice].s}</span></div>${f.tip?`<div class="muted" style="font-size:14px;margin-top:3px">${esc(f.tip)}</div>`:""}</div><span></span></div>`).join("")}</div></div>`}
+ if(seg==="photo"){const list=PHOTO.filter(p=>c==="all"||p.c===c);const got=PHOTO.filter(p=>isDone(p.id)).length;
+  return `<div class="stack">${head}<div class="card tape"><div class="row" style="justify-content:space-between"><h3>Shot list</h3><span class="chip">${got}/${PHOTO.length} taken</span></div>
+  ${list.map(p=>`<div class="item ${isDone(p.id)?"done":""}">${tick(isDone(p.id),`data-check="${p.id}" aria-label="Got the ${esc(p.title)} shot"`)}<div class="main"><div class="name">${esc(p.title)}</div><div class="muted" style="font-size:14px">${esc(p.when)}</div><div style="margin-top:6px">${placeBtns(p.place,{compact:true})}</div></div><span class="chip citytag city-${p.c}">${esc(CITIES[p.c])}</span></div>`).join("")}</div></div>`}
+ const list=S.wishlist.filter(w=>c==="all"||w.city===c).sort((a,b)=>(a.done?1:0)-(b.done?1:0)||(b.createdAt||0)-(a.createdAt||0));
+ return `<div class="stack">${head}
+ <form class="add card tape r" id="wishForm"><h3>Add an idea</h3><input type="text" id="wishTitle" placeholder="e.g. Firefly Harbor cat café" maxlength="120" required>
+  <div class="r"><select id="wishCity" aria-label="City">${["cq","dl","sg","lj","sz"].map(k=>`<option value="${k}" ${k===(c==="all"?"cq":c)?"selected":""}>${CITIES[k]}</option>`).join("")}</select><input type="text" id="wishNote" placeholder="Note or link (optional)" maxlength="200"></div>
+  <button class="btn primary" type="submit" ${canEdit()?"":"disabled"}>Add to wishlist</button></form>
+ <div class="card">${S.wishlist.length?(list.length?list.map(w=>`<div class="item ${w.done?"done":""}">${tick(!!w.done,`data-toggle="wishlist:${esc(w.id)}" aria-label="Did ${esc(w.title)}"`)}<div class="main"><div class="name">${esc(w.title)}</div><div class="row" style="margin-top:3px"><span class="chip citytag city-${esc(w.city)}">${esc(CITIES[w.city]||w.city)}</span>${w.from?`<span class="chip">${esc(w.from)}</span>`:""}</div>${w.note?`<div class="muted" style="font-size:14px;margin-top:3px;overflow-wrap:anywhere">${esc(w.note)}</div>`:""}</div><button class="x" data-del="wishlist:${esc(w.id)}" aria-label="Delete ${esc(w.title)}" ${canEdit()?"":"hidden"}>×</button></div>`).join(""):`<p class="muted">Nothing for this city yet.</p>`):emptyLists("wishlist")}</div></div>`}
+
+const sortTodo=(a,b)=>Object.keys(TODO_GROUPS).indexOf(a.group)-Object.keys(TODO_GROUPS).indexOf(b.group)||(a.order||0)-(b.order||0);
+function todoRow(t){return `<div class="item ${t.done?"done":""}">${tick(!!t.done,`data-toggle="todos:${esc(t.id)}" aria-label="Done: ${esc(t.text)}"`)}<div class="main"><div class="name">${esc(t.text)}</div>${t.due?`<div class="muted" style="font-size:13px">${esc(t.due)}</div>`:""}</div><button class="x" data-del="todos:${esc(t.id)}" aria-label="Delete" ${canEdit()?"":"hidden"}>×</button></div>`}
+function renderTrip(){
+ const seg=V.trip;
+ const head=`<div class="seg" role="group" aria-label="Trip"><button data-tripseg="bookings" aria-pressed="${seg==="bookings"}">Bookings</button><button data-tripseg="todos" aria-pressed="${seg==="todos"}">To-dos</button><button data-tripseg="packing" aria-pressed="${seg==="packing"}">Packing</button></div>`;
+ if(seg==="todos"){const open=S.todos.filter(t=>!t.done).length;
+  return `<div class="stack">${head}${banner()}<div class="card tape"><div class="row" style="justify-content:space-between"><h3>To-dos</h3><span class="chip">${open} open</span></div>
+  ${S.todos.length?Object.entries(TODO_GROUPS).map(([g,l])=>{const items=S.todos.filter(t=>t.group===g).sort(sortTodo);return items.length?`<div class="grouphead">${l}</div>${items.map(todoRow).join("")}`:""}).join(""):emptyLists("to-dos")}</div>
+  <form class="add card tape r" id="todoForm"><h3>Add a to-do</h3><input type="text" id="todoText" placeholder="e.g. Buy travel eSIM" maxlength="160" required>
+  <select id="todoGroup" aria-label="When">${Object.entries(TODO_GROUPS).map(([k,l])=>`<option value="${k}">${l}</option>`).join("")}</select>
+  <button class="btn primary" type="submit" ${canEdit()?"":"disabled"}>Add</button></form></div>`}
+ if(seg==="packing"){const done=S.packing.filter(t=>t.done).length;
+  return `<div class="stack">${head}${banner()}<div class="card tape"><div class="row" style="justify-content:space-between"><h3>Packing</h3><span class="chip">${done}/${S.packing.length} packed</span></div>
+  <p class="muted" style="margin:4px 0 0;font-size:14px">Pack to the strictest leg: 1 Jan Air China, 5kg carry-on and 20kg checked.</p>
+  ${S.packing.length?Object.entries(PACK_GROUPS).map(([g,l])=>{const items=S.packing.filter(t=>t.group===g).sort((a,b)=>(a.order||0)-(b.order||0));return items.length?`<div class="grouphead" style="margin-top:10px">${l}</div>${items.map(t=>`<div class="item ${t.done?"done":""}">${tick(!!t.done,`data-toggle="packing:${esc(t.id)}" aria-label="Packed ${esc(t.text)}"`)}<div class="main"><div class="name">${esc(t.text)}</div></div><button class="x" data-del="packing:${esc(t.id)}" aria-label="Delete" ${canEdit()?"":"hidden"}>×</button></div>`).join("")}`:""}).join(""):emptyLists("packing list")}</div>
+  <form class="add card tape r" id="packForm"><h3>Add to packing</h3><input type="text" id="packText" placeholder="e.g. Hand warmers" maxlength="120" required>
+  <select id="packGroup" aria-label="Group">${Object.entries(PACK_GROUPS).map(([k,l])=>`<option value="${k}">${l}</option>`).join("")}</select>
+  <button class="btn primary" type="submit" ${canEdit()?"":"disabled"}>Add</button></form></div>`}
+ const bk=[...S.bookings].sort((a,b)=>String(a.start||"").localeCompare(String(b.start||"")));
+ return `<div class="stack">${head}${banner()}
+ ${bk.length?bk.map(b=>`<article class="ticket city-${esc(b.city||"home")}"><div class="top"><div class="row" style="justify-content:space-between"><span class="sticker">${esc(b.kind||"Booking")}</span><span class="chip">${esc(b.status||"Booked")}</span></div><h3 style="margin-top:8px">${esc(b.title)}</h3>${b.cn?`<div style="font-family:var(--f-cn)">${esc(b.cn)}</div>`:""}<div class="muted" style="font-weight:700">${esc(b.when||"")}</div></div>
+  <div class="bot"><dl class="kv">${(b.fields||[]).map(f=>`<dt>${esc(f.k)}</dt><dd class="${f.mono?"ref":""}">${esc(f.v)}</dd>`).join("")}</dl>${b.place&&P[b.place]?placeBtns(b.place,{compact:true}):""}</div></article>`).join(""):emptyLists("bookings")}
+ <p class="muted" style="font-size:13px;margin:0">New confirmations in Elijah's email get added here by Claude when he asks.</p></div>`}
+
+function balances(){const out={};S.expenses.forEach(e=>{const a=+e.amount||0;const cur=e.cur||"CNY";out[cur]=out[cur]||0;
+ const other=e.split==="half"?a/2:e.split==="other"?a:0; out[cur]+=(e.paidBy==="Elijah"?other:-other)});return out}
+const fmtAmt=(n,cur)=>(cur==="SGD"?"S$":"¥")+(Math.round(n*100)/100).toLocaleString("en-SG",{minimumFractionDigits:n%1?2:0,maximumFractionDigits:2});
+function totalsByCur(){const t={};S.expenses.forEach(e=>{const c=e.cur||"CNY";t[c]=(t[c]||0)+(+e.amount||0)});return t}
+function renderMoney(){
+ const bal=balances();const curs=Object.keys(bal);const totals=totalsByCur();
+ const list=[...S.expenses].sort((a,b)=>(b.createdAt||0)-(a.createdAt||0));
+ return `<div class="stack">${banner()}
+ <section class="card tape"><span class="sticker">Who owes who</span>
+ ${curs.length?curs.map(c=>{const v=bal[c];return `<div class="balance" style="margin-top:8px">${Math.abs(v)<0.005?`All square in ${c}`:v>0?`Ashley owes Elijah <span class="amt">${fmtAmt(v,c)}</span>`:`Elijah owes Ashley <span class="amt">${fmtAmt(-v,c)}</span>`}</div>`}).join("")+`<p class="muted" style="margin:6px 0 0;font-size:13px">Spent so far: ${Object.entries(totals).map(([c,v])=>fmtAmt(v,c)).join(" + ")}. Currencies are kept separate, no conversion.</p>`:`<p class="muted" style="margin:8px 0 0">No spending logged yet. Add the first one below.</p>`}</section>
+ <form class="add card tape r" id="expForm"><h3>Log a spend</h3>
+  <input type="text" id="expWhat" placeholder="What was it? e.g. Hotpot dinner" maxlength="100" required>
+  <div class="r"><input type="number" id="expAmt" inputmode="decimal" min="0" step="0.01" placeholder="Amount" required><select id="expCur" aria-label="Currency"><option value="CNY">¥ CNY</option><option value="SGD">S$ SGD</option></select></div>
+  <div class="r"><select id="expPaid" aria-label="Paid by">${PEOPLE.map(p=>`<option value="${p}" ${p===ME.name?"selected":""}>${p} paid</option>`).join("")}</select>
+  <select id="expSplit" aria-label="Split"><option value="half">Split 50/50</option><option value="payer">Just for the payer</option><option value="other">All for the other</option></select></div>
+  <button class="btn primary" type="submit" ${canEdit()?"":"disabled"}>Add spend</button></form>
+ <div class="card"><h3>Log</h3>${S.expenses.length?list.map(e=>`<div class="item"><span class="who ${e.paidBy==="Ashley"?"A":"E"}" aria-label="${esc(e.paidBy)} paid">${e.paidBy==="Ashley"?"A":"E"}</span><div class="main"><div class="name">${esc(e.what)}</div><div class="muted" style="font-size:13px">${esc(e.paidBy)} paid · ${e.split==="half"?"50/50":e.split==="other"?"for the other":"just for them"}${e.day?" · "+fmtDate(e.day):""}</div></div><div class="row" style="flex-wrap:nowrap"><span class="amt">${fmtAmt(+e.amount||0,e.cur||"CNY")}</span><button class="x" data-del="expenses:${esc(e.id)}" aria-label="Delete ${esc(e.what)}" ${canEdit()?"":"hidden"}>×</button></div></div>`).join(""):emptyLists("spending log")}</div></div>`}
+
+function renderSummary(){
+ const allStops=DAYS.flatMap(d=>d.stops.map((s,i)=>"s-"+d.date+"-"+i));
+ const stopsDone=allStops.filter(isDone).length;const stamps=STAMP_CITIES.filter(c=>stampInfo(c).got).length;
+ const dishes=FOOD.filter(f=>isDone(f.id));const shots=PHOTO.filter(p=>isDone(p.id)).length;
+ const totals=totalsByCur();const recent=[...S.photos].sort((a,b)=>(b.createdAt||0)-(a.createdAt||0)).slice(0,6);
+ const wishDone=S.wishlist.filter(w=>w.done).length;
+ return `<div class="stack">
+ <section class="hero city-sz"><div class="stamp">TRIP<br>BOOK</div><div class="hero-copy"><div class="big" style="font-size:46px">Chongqing → Yunnan</div><p class="hand" style="font-size:22px">Elijah &amp; Ashley · 28 Dec 2026 – 8 Jan 2027</p></div></section>
+ <div class="statgrid">
+  <div class="stat"><div class="n">12</div><div class="l">days</div></div>
+  <div class="stat"><div class="n">${stamps}/5</div><div class="l">stamps</div></div>
+  <div class="stat"><div class="n">${stopsDone}</div><div class="l">of ${allStops.length} stops</div></div>
+  <div class="stat"><div class="n">${S.photos.length}</div><div class="l">photos</div></div>
+  <div class="stat"><div class="n">${dishes.length}</div><div class="l">dishes tried</div></div>
+  <div class="stat"><div class="n">${shots}</div><div class="l">shots ticked</div></div>
+ </div>
+ <section class="card tape"><h3>Stamps</h3><div class="stamps" style="margin-top:10px">${STAMP_CITIES.map(stampHTML).join("")}</div></section>
+ ${recent.length?`<section class="card tape r"><h3>Favourite frames</h3><div class="photos">${recent.map(p=>`<figure class="polaroid"><img src="/_blob/${esc(p.asset)}" alt="${esc(p.caption||"Trip photo")}" loading="lazy" data-ph="${esc(p.id)}"><figcaption>${esc(p.caption||"")}<div class="by">${esc(fmtDate(p.day))}</div></figcaption></figure>`).join("")}</div></section>`:""}
+ <section class="card tape l"><h3>We ate</h3>${dishes.length?`<p class="hand" style="margin:6px 0 0">${dishes.map(f=>esc(f.en)).join(" · ")}</p>`:`<p class="muted" style="margin:6px 0 0">Nothing ticked yet in Ideas → Food.</p>`}
+  <h3 style="margin-top:14px">We spent</h3><p style="margin:6px 0 0">${Object.keys(totals).length?Object.entries(totals).map(([c,v])=>`<span class="amt">${fmtAmt(v,c)}</span>`).join(" + "):`<span class="muted">Nothing logged yet.</span>`}</p>
+  <h3 style="margin-top:14px">Wishlist</h3><p style="margin:6px 0 0">${wishDone} of ${S.wishlist.length} ideas done.</p></section>
+ <p class="hand muted" style="text-align:center">Screenshot this page to share it.</p>
+ </div>`}
+
+function renderTabs(){$("#tabs").innerHTML=TABS.map(([k,l])=>`<a href="#${k}" ${k===V.tab?'aria-current="page"':""}>${ICON[k]}<span>${l}</span></a>`).join("")}
+let lastTab=null;
+function annotate(animate){
+ if(typeof RoughNotation==="undefined")return;const acc=cssVar("--accent");
+ document.querySelectorAll("#view .rough-annotation").forEach(s=>s.remove());
+ try{document.querySelectorAll("#view .rn-underline").forEach(el=>RoughNotation.annotate(el,{type:"underline",color:acc,strokeWidth:2.5,padding:1,animate,iterations:1}).show());
+  document.querySelectorAll("#view .rn-circle").forEach(el=>RoughNotation.annotate(el,{type:"circle",color:acc,strokeWidth:2,padding:6,animate,iterations:1}).show())}catch(e){}}
+function render(){
+ const y=window.scrollY;renderTabs();$("#meBtn").textContent="I'm "+ME.name;
+ const R={today:renderToday,plan:renderPlan,map:renderMap,ideas:renderIdeas,trip:renderTrip,money:renderMoney,summary:renderSummary};
+ const ae=document.activeElement;const active=ae&&ae.id;const sel=ae&&typeof ae.selectionStart==="number"?[ae.selectionStart,ae.selectionEnd]:null;
+ const keep={};["wishTitle","wishNote","todoText","packText","expWhat","expAmt","capText","note-Elijah","note-Ashley"].forEach(id=>{const el=document.getElementById(id);if(el&&(id.indexOf("note-")!==0||el===ae))keep[id]=el.value});
+ $("#view").innerHTML=R[V.tab]();
+ Object.entries(keep).forEach(([id,v])=>{const el=document.getElementById(id);if(el)el.value=v});
+ if(active){const el=document.getElementById(active);if(el){el.focus({preventScroll:true});if(sel&&el.setSelectionRange)try{el.setSelectionRange(sel[0],sel[1])}catch(e){}}}
+ const changed=lastTab!==V.tab;
+ if(!changed)window.scrollTo(0,y);else window.scrollTo(0,0);lastTab=V.tab;
+ if(V.tab==="plan"){const b=document.querySelector('.daypick [aria-pressed="true"]');if(b)b.scrollIntoView({block:"nearest",inline:"center"})}
+ if(V.tab==="map")drawMap();
+ document.querySelectorAll("#view img[data-ph]").forEach(img=>img.addEventListener("error",()=>{const d=document.createElement("div");d.className="ph-missing";d.textContent="Photo can't load here";img.replaceWith(d)},{once:true}));
+ annotate(changed);thudCity=null;
+}
+
+/* ===================== PHOTOS ===================== */
+async function shrink(file){
+ try{const bmp=await createImageBitmap(file);const max=1600;const s=Math.min(1,max/Math.max(bmp.width,bmp.height));
+  const c=document.createElement("canvas");c.width=Math.round(bmp.width*s);c.height=Math.round(bmp.height*s);c.getContext("2d").drawImage(bmp,0,0,c.width,c.height);
+  const blob=await new Promise(r=>c.toBlob(r,"image/jpeg",.85));return blob||file}catch(e){return file}}
+let uploadDay=null;
+async function uploadPhotos(files){
+ const day=uploadDay;if(!day||!files.length)return;if(!S.assets){toast("Only editors can add photos");return}
+ const caption=(document.getElementById("capText")||{}).value||"";const picked=[...files].slice(0,8);
+ S.uploading=picked.length;render();let ok=0;
+ for(const f of picked){
+  try{const blob=await shrink(f);const type=blob.type&&/^image\/(jpeg|png|gif|webp)$/.test(blob.type)?blob.type:"image/jpeg";
+   const r=await S.assets.upload(blob,{type});
+   const saved=await addDoc("photos",{day,asset:r.id,caption:caption.trim().slice(0,80),by:ME.name});if(saved)ok++;
+  }catch(e){const c=e&&e.code;toast(c==="too_large"?"That photo is too big (20 MB max)":c==="unsupported_type"?"That file type isn't supported. Try a JPEG or PNG.":c==="quota_or_state"?"Photo storage is full":c==="rate_limited"?"Too many uploads at once. Try again in a minute.":"Couldn't upload a photo. Try again.")}
+  S.uploading=Math.max(0,S.uploading-1);render();
+ }
+ if(ok){const cap=document.getElementById("capText");if(cap)cap.value="";toast(ok===1?"Photo added to the scrapbook":ok+" photos added");celebrate()}
+}
+async function deletePhoto(id){const p=S.photos.find(x=>x.id===id);V.confirmDel=null;if(!p)return;
+ S.photos=S.photos.filter(x=>x.id!==id);render();
+ const ok=await write(db=>db.doc("photos/"+id).delete());
+ if(ok&&S.assets&&p.asset){try{await S.assets.delete(p.asset)}catch(e){if(e&&e.code==="not_uploader")toast("Removed from the page. Only the person who added it can delete the file.")}}}
+
+/* ===================== DRIVER CARD ===================== */
+function openDriver(id){const p=P[id];if(!p)return;const o=$("#driver");
+ o.innerHTML=`<div class="row" style="justify-content:space-between"><span class="say" id="drvTitle">请带我去 · Please take me to</span><button class="btn" data-close>Close</button></div>
+ <div class="bigcn">${esc(p.cn)}</div>${p.addr?`<div class="bigaddr">${esc(p.addr)}</div>`:""}<p class="muted" style="font-size:16px;font-weight:700">${esc(p.en)} · ${esc(CITIES[p.c])}</p>
+ <div class="row" style="margin-top:auto;padding-top:16px"><button class="btn primary" data-copy="${esc(p.addr||p.cn)}">Copy for Didi</button><a class="btn" href="${amap(p)}" target="_blank" rel="noopener">Open in Amap</a></div>`;
+ o.hidden=false;o.querySelector("[data-close]").focus()}
+function closeDriver(){$("#driver").hidden=true}
+
+/* ===================== EVENTS ===================== */
+function goDay(date,dir){if(!date)return;V.flip=dir;V.day=date;V.confirmDel=null;ls.set("day",date);render()}
+document.addEventListener("click",e=>{
+ const t=e.target.closest("button,a");if(!t)return;
+ if(t.id==="meBtn"){ME.name=ME.name==="Elijah"?"Ashley":"Elijah";toast("This phone is now "+ME.name+"'s");render();return}
+ if(t.dataset.check){toggleCheck(t.dataset.check);return}
+ if(t.dataset.toggle){const[c,id]=t.dataset.toggle.split(":");toggleDoc(c,id);return}
+ if(t.dataset.del){const[c,id]=t.dataset.del.split(":");removeDoc(c,id);return}
+ if(t.dataset.addphoto){uploadDay=t.dataset.addphoto;$("#photoInput").value="";$("#photoInput").click();return}
+ if(t.dataset.askdel){V.confirmDel=t.dataset.askdel;render();return}
+ if(t.dataset.delphoto){deletePhoto(t.dataset.delphoto);return}
+ if(t.dataset.driver){openDriver(t.dataset.driver);return}
+ if(t.hasAttribute("data-close")){closeDriver();return}
+ if(t.dataset.copy!=null){copyText(t.dataset.copy,"Copied the Chinese address");return}
+ if(t.dataset.day!=null&&t.tagName==="BUTTON"){const i=DAYS.findIndex(d=>d.date===V.day),j=DAYS.findIndex(d=>d.date===t.dataset.day);goDay(t.dataset.day,j>i?"fwd":"back");return}
+ if(t.dataset.goday){V.day=t.dataset.goday;ls.set("day",V.day)}
+ if(t.dataset.placecity){e.preventDefault();V.placeCity=t.dataset.placecity;ls.set("placeCity",V.placeCity);if(V.tab!=="map")location.hash="map";render();if(t.tagName!=="BUTTON"){const el=document.getElementById("places");if(el)el.scrollIntoView({behavior:"smooth",block:"start"})}return}
+ if(t.dataset.ideacity){V.ideaCity=t.dataset.ideacity;ls.set("ideaCity",V.ideaCity);render();return}
+ if(t.dataset.ideas){V.ideas=t.dataset.ideas;ls.set("ideas",V.ideas);render();return}
+ if(t.dataset.tripseg){V.trip=t.dataset.tripseg;ls.set("trip",V.trip);if(t.tagName==="BUTTON"){render();return}}
+});
+$("#photoInput").addEventListener("change",e=>uploadPhotos(e.target.files));
+document.addEventListener("change",e=>{const t=e.target;if(t.dataset&&t.dataset.note){const[day,name]=t.dataset.note.split("|");const text=t.value.slice(0,600);
+ const id=day+"-"+name;const ex=S.notes.find(n=>n.id===id);if(ex)ex.text=text;else S.notes.push({id,day,name,text});
+ write(db=>db.doc("notes/"+id).set({day,name,text,at:Date.now()})).then(ok=>{if(ok)toast("Saved")})}});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("#driver").hidden)closeDriver()});
+let tx=null,ty=null;
+document.addEventListener("touchstart",e=>{if(V.tab!=="plan"||!e.target.closest("#page"))return;const p=e.touches[0];tx=p.clientX;ty=p.clientY},{passive:true});
+document.addEventListener("touchend",e=>{if(tx==null)return;const p=e.changedTouches[0];const dx=p.clientX-tx,dy=p.clientY-ty;tx=null;
+ if(Math.abs(dx)>70&&Math.abs(dx)>Math.abs(dy)*1.5){const i=DAYS.findIndex(d=>d.date===V.day);const n=DAYS[i+(dx<0?1:-1)];if(n)goDay(n.date,dx<0?"fwd":"back")}},{passive:true});
+document.addEventListener("submit",async e=>{e.preventDefault();const f=e.target;
+ if(f.id==="wishForm"){const title=$("#wishTitle").value.trim();if(!title)return;const ok=await addDoc("wishlist",{title,city:$("#wishCity").value,note:$("#wishNote").value.trim(),done:false});if(ok){$("#wishTitle").value="";$("#wishNote").value="";toast("Added to the wishlist")}}
+ if(f.id==="todoForm"){const text=$("#todoText").value.trim();if(!text)return;const ok=await addDoc("todos",{text,group:$("#todoGroup").value,done:false,order:Date.now()});if(ok){$("#todoText").value="";toast("To-do added")}}
+ if(f.id==="packForm"){const text=$("#packText").value.trim();if(!text)return;const ok=await addDoc("packing",{text,group:$("#packGroup").value,done:false,order:Date.now()});if(ok){$("#packText").value="";toast("Added to packing")}}
+ if(f.id==="expForm"){const what=$("#expWhat").value.trim();const amount=parseFloat($("#expAmt").value);if(!what||!(amount>0)){toast("Add what it was and an amount");return}
+  const paidBy=$("#expPaid").value;const ok=await addDoc("expenses",{what,amount:Math.round(amount*100)/100,cur:$("#expCur").value,paidBy,split:$("#expSplit").value,day:cstNow().date});
+  if(ok){$("#expWhat").value="";$("#expAmt").value="";toast("Spend logged")}}
+});
+window.addEventListener("hashchange",()=>{routeFromHash();render()});
+try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>render())}catch(e){}
+routeFromHash();render();setSync("connecting");initDb();
+setInterval(()=>{if(V.tab==="today"&&!document.querySelector("input:focus,textarea:focus"))render()},60000);
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>{if(V.tab==="map")drawMap();annotate(false)});
+</script>
