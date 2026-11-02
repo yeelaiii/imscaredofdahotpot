@@ -280,7 +280,8 @@ const P={
  shuhe:{c:"lj",en:"Shuhe Old Town",cn:"束河古镇"},
  heilongtan:{c:"lj",en:"Black Dragon Pool",cn:"黑龙潭公园"},
  ljg:{c:"lj",en:"Lijiang Sanyi Airport",cn:"丽江三义国际机场"},
- szx:{c:"sz",en:"Shenzhen Bao'an Airport T3",cn:"深圳宝安国际机场T3航站楼"}
+ szx:{c:"sz",en:"Shenzhen Bao'an Airport T3",cn:"深圳宝安国际机场T3航站楼"},
+ ltago:{c:"sz",en:"Long Time Ago lamb skewers (Huaide Wanxianghui, Fuyong)",cn:"很久以前羊肉串(怀德万象汇店)",addr:"深圳市宝安区福永 怀德万象汇"}
 };
 const DAYS=[
  {date:"2026-12-28",c:"cq",title:"Fly in, first hotpot",sleep:"lindu",sun:"18:03",stops:[
@@ -353,7 +354,7 @@ const DAYS=[
   {t:"08:00",title:"Leave for Lijiang airport",note:"Arrive 3h before, as Trip.com recommends.",place:"ljg"},
   {t:"11:45",title:"Fly Lijiang → Shenzhen T3",note:"CZ8582 · separate bookings: sit together. Refs in Trip → Bookings."},
   {t:"14:10",title:"Land at Bao'an T3, to the airport hotel",note:"Bags may stay checked through: ask China Southern. Overnight bag in carry-on.",place:"szx"},
-  {t:"",title:"Free evening near the hotel"}]},
+  {t:"18:00",title:"Dinner: Long Time Ago lamb skewers 很久以前",note:"Staff grill the skewers for you. Queue on the WeChat account 很久以前羊肉串 before you go (walk-ins often wait ~40 min). About ¥125 each (unverified). Ask 不要辣 for Elijah's skewers.",place:"ltago"}]},
  {date:"2027-01-08",c:"home",title:"Home",sleep:null,sun:"",stops:[
   {t:"05:30",title:"At Bao'an T3 for check-in",place:"szx"},
   {t:"08:00",title:"Fly Shenzhen → Singapore",note:"CZ8117"},
@@ -378,7 +379,8 @@ const FOOD=[
  {id:"f-ljbaba",c:"lj",en:"Lijiang baba",cn:"丽江粑粑",spice:"mild",tip:""},
  {id:"f-mixian",c:"lj",en:"Crossing-the-bridge noodles",cn:"过桥米线",spice:"mild",tip:"Yunnan classic, anywhere in Yunnan."},
  {id:"f-jun",c:"lj",en:"Wild mushroom hotpot",cn:"野生菌火锅",spice:"mild",tip:"Only at reputable restaurants."},
- {id:"f-yue",c:"sz",en:"Cantonese dinner",cn:"粤菜",spice:"mild",tip:"Easy last-night meal near the airport."}
+ {id:"f-ltago",c:"sz",en:"Lamb skewers at Long Time Ago",cn:"很久以前羊肉串",spice:"ask",tip:"Last-night dinner. Cumin, not chilli, is the main seasoning, but say 不要辣 to be safe."},
+ {id:"f-yue",c:"sz",en:"Cantonese dinner",cn:"粤菜",spice:"mild",tip:"Backup if the skewer queue is too long."}
 ];
 const SPICE={mild:{l:"Mild",s:"Safe for Elijah"},ask:{l:"Ask mild",s:"Say 不要辣"},split:{l:"Split pot",s:"Both happy"},hot:{l:"Spicy",s:"Ashley's"}};
 const PHOTO=[
