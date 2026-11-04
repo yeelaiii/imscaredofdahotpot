@@ -17,4 +17,6 @@ A scrapbook-style trip companion for our Chongqing → Yunnan trip (28 Dec 2026 
 
 Opened anywhere other than claude.ai, the page still shows the plan, map, places and driver cards, but lists and photos won't load or save.
 
-Libraries (loaded from jsDelivr): [Rough.js](https://github.com/rough-stuff/rough), [Rough Notation](https://github.com/rough-stuff/rough-notation), [canvas-confetti](https://github.com/catdad/canvas-confetti). Fonts from Google Fonts: Caveat, Nunito, IBM Plex Mono, ZCOOL KuaiLe.
+Motion: [GSAP](https://github.com/greensock/GSAP) 3.15.0 with ScrollTrigger drives the day page-flip swipe, the self-drawing route map, stamp thunks, tick scribbles, polaroid drops and zoom, and the trip book's scroll reveals. Everything switches off when the phone has Reduce Motion on.
+
+Libraries (pasted into `index.html` so the page doesn't depend on a CDN, which helps in China): [GSAP](https://github.com/greensock/GSAP) ([standard license](https://gsap.com/standard-license)), [Rough.js](https://github.com/rough-stuff/rough), [Rough Notation](https://github.com/rough-stuff/rough-notation), [canvas-confetti](https://github.com/catdad/canvas-confetti). Fonts from Google Fonts (Caveat, Nunito, IBM Plex Mono, ZCOOL KuaiLe), with system fallbacks where Google is blocked.
